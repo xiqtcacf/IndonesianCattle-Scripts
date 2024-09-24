@@ -11,7 +11,7 @@ VCF=/isdata/hellergrp/wlk579/bos_tmp/imputation/input/bosTau9_bos_variable_sites
 OUT=/isdata/hellergrp/wlk579/bos_tmp/imputation/output
 outdir=$OUT/imputed
 indir=$OUT/vcf
-mkdir -p $indir $outdir  
+mkdir -p $indir $outdir
 
 #runBeagle3_by_region() {
 #    # show verbose log
