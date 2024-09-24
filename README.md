@@ -34,7 +34,7 @@ Script to infer the ancient admixture events, we calculated D statistics (ABBA-B
 
 Script to estimate genome-wide admixture proportions using local ancestry inference with LOTER;
 
-Script to estimated genome-wide admixture proportions using local ancestry inference with F4-derived admixture ratio;
+Script to estimated genome-wide admixture proportions using local ancestry inference with F4 ratio;
 
 Script to identify regions in the genome that were introgressed from highly divergent source populations into the admixed breeds using Hmmix;
 
