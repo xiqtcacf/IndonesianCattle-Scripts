@@ -8,26 +8,27 @@ A pipeline for mapping and post-mapping filtering using PALEOMIX BAM pipeline.
 A pipeline designed to remove problematic samples prior to downstream analyses.
 
 ### Sites filtering
-A pipeline designed to avoid biases from low-quality mapping.
+A pipeline designed to avoid biases from low-quality mapping sites.
 
-### Genotype calling, imputation and phasing
+### Genotype calling
 A pipeline designed to call genotypes;
 
-Script to imputate and phase genotypes;
+### Imputation and phasing
+Scripts to imputate and phase genotypes;
 
 ### Population structure
 Script to infer principal component analysis (PCA) using HaploNet;
 
 Script to estimate admixture proportions for each individual using HaploNet;
 
-Script to infer Pairwise global Fst between each pair of populations;
+Pairwise global Fst: Script to infer Pairwise global Fst between each pair of populations;
 
 ### Genetic diversity and inbreeding
-Script to calculate genome-wide heterozygosity;
+Genome-Wide heterozygosity: Script to calculate genome-wide heterozygosity;
 
-Script to infer runs of homozygosity (ROH);
+Runs of homozygosity: Script to infer runs of homozygosity (ROH);
 
-Script to calculate genome-wide heterozygosity without ROH;
+                      Script to calculate genome-wide heterozygosity without ROH;
 
 ### Admixture and origin of Indonesian cattle
 Script to infer the population tree assuming different numbers of admixture events using TreeMix;
