@@ -4,8 +4,10 @@
 ### Mapping, Sample filtering, and Sites filtering
 A pipeline for mapping and post-mapping filtering using PALEOMIX BAM pipeline.
 
-A pipeline designed to remove problematic samples prior to downstream analyses, based on
+### Sample filtering
+A pipeline designed to remove problematic samples prior to downstream analyses, bas
 
+### Sites filtering
 A pipeline designed to avoid biases from low-quality mapping, based on 
 
 ### Genotype calling, imputation and phasing
