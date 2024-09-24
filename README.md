@@ -40,7 +40,7 @@ Script to identify regions in the genome that were introgressed from highly dive
 
 Script to calculate the genetic similarity of each introgressed region identified by Hmmix with two different potential source lineages, Javan banteng, and gaur;
 
-Script to infer genetic distance shared between pairs of individuals within introgressed regions identified by Hmmix;
+Script to infer genetic distance (ibs) shared between pairs of individuals within introgressed regions identified by Hmmix;
 
 Script to inferred the introgression time using AncestryHMM.
 
