@@ -1,14 +1,14 @@
 # Scripts for
 ## Wang, X., Nursyifa, C., ... Heller, R. (2024). Multiple origins and extensive bovine introgression shaped the highly diverse Indonesian cattle
 
-### Mapping, Sample filtering, and Sites filtering
+### Mapping
 A pipeline for mapping and post-mapping filtering using PALEOMIX BAM pipeline.
 
 ### Sample filtering
-A pipeline designed to remove problematic samples prior to downstream analyses, bas
+A pipeline designed to remove problematic samples prior to downstream analyses.
 
 ### Sites filtering
-A pipeline designed to avoid biases from low-quality mapping, based on 
+A pipeline designed to avoid biases from low-quality mapping.
 
 ### Genotype calling, imputation and phasing
 A pipeline designed to call genotypes;
