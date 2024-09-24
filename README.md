@@ -2,41 +2,16 @@
 ## Wang, X., Nursyifa, C., ... Heller, R. (2024). Multiple origins and extensive bovine introgression shaped the highly diverse Indonesian cattle
 
 ### Mapping, Sample filtering, and Sites filtering
-A pipeline designed for mapping and post-mapping filtering of waterbuck.
+A pipeline for mapping and post-mapping filtering using PALEOMIX BAM pipeline.
 
 A pipeline designed to remove problematic samples prior to downstream analyses, based on
 
-mapping statistics;
-
-statistics from MultipleQC;
-
-exteremely high heterozygosity;
-
-error rates;
-
-relateness between pairwise samples: King calculated from global 2D-sfs;
-
-relateness within each location by NgsRelate.
-
 A pipeline designed to avoid biases from low-quality mapping, based on 
 
-3.1.detection of problematic regions of the reference genomes:
-
-3.1.1.mappability;
-
-3.1.2.repeats;
-
-3.1.3.sex-linked chromosomes or scaffolds;
-
-3.2.sites that showed unusual depth; 
-
-3.3.sites excess heterozygosity after mapping. 
-
-
 ### Genotype calling, imputation and phasing
-Script to call genotypes;
+A pipeline designed to call genotypes;
 
-Script to imputate and phase genotypes.
+Script to imputate and phase genotypes;
 
 ### Population structure
 Script to infer principal component analysis (PCA) using HaploNet;
