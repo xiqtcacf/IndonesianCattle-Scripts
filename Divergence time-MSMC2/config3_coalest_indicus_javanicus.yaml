@@ -8,14 +8,14 @@ MSMC2: "/home/krishang/software/msmc2/msmc2"
 VCF: "snps10M.6inds.filltag.phased.bosTau9_bos_variable_sites_nomultiallelics_noindels_10dp_3het.phased.bcf"
 PHASED: 1 ## 1: yes 0: unphased
 ## OUTMAIN: "results"
-OUTMAIN: "/home/users/xi/AsianBos_project/Bali_indicus/msmc2_coalest_Bali_indicus"
+OUTMAIN: "/home/users/xi/AsianBos_project/indicus_javanicus/msmc2_coalest_indicus_javanicus"
 GOODBED: "autosome_rep_het_dep_map.bed"
 FAI: "bosTau9_plusY.fasta.fai"
 MUT: 1.54e-8
 GEN: 7
 POPS:
-  Bali_cattle_Indonesia: Bali_cattle_Indonesia.group
   Bos_indicus: Bos_indicus.group
+  Bos_javanicus: Bos_javanicus.group
 CHROMS:
   - NC_037328.1
   - NC_037329.1
