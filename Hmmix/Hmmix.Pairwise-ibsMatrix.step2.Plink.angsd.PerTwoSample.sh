@@ -30,7 +30,7 @@ while IFS= read -r line1 && IFS= read -r line2 <&3; do
 ## get two samples, maf0.05 and region bcf files by bcftools
     $bcftools view -i 'AF>0.05 & AF<0.95' -R $input/ArchaicPro0.9.10kWindow.$line1.$line2.bed -s $line1,$line2 ../314inds.imputated.BosTau9.bcf -Ob -o $line1.$line2.bcf.gz
     $bcftools index $line1.$line2.bcf.gz
-#### do IBS tree for all samples, could be used as input of NJ tree
+#### do IBS tree for all samples, further be used as input of NJ tree
     plink --bcf $line1.$line2.bcf.gz \
           --chr-set 29 \
           --distance square ibs allele-ct \
