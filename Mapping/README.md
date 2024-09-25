@@ -1,6 +1,6 @@
-# Mapping and filtering of waterbuck
+# Mapping and filtering of Asian Bos
 
-The following describes the commands used to identify/verify adapters, map, and filter a waterbuck samples for one or more batches of samples.
+The following describes the commands used to identify/verify adapters, map, and filter a sample for one or more batches of samples.
 
 ----------------------------------------------------------------------------------------
 
