@@ -8,10 +8,10 @@ cd $DIR
 admixture_proportion=/isdata/hellergrp/wlk579/Indonesia_Bos_project/5.Analyses_King015/AncestryHMM/format.Casia.bantengPro.txt
 
 #### step1 get the correct way vcf: all of chromosomes
-#bcftools view $input_file -o imputed.vcf -O v
-#bcftools query -f '%CHROM\t%POS\t%ID\t%REF\t%ALT\t%QUAL\t%FILTER\t%INFO\tGT\t[%GT\t]\n' imputed.vcf > format.imputed.vcf
-#grep '#' imputed.vcf > HEADER.txt
-#cat  HEADER.txt format.imputed.vcf > new.format.imputed.vcf
+bcftools view $input_file -o imputed.vcf -O v
+bcftools query -f '%CHROM\t%POS\t%ID\t%REF\t%ALT\t%QUAL\t%FILTER\t%INFO\tGT\t[%GT\t]\n' imputed.vcf > format.imputed.vcf
+grep '#' imputed.vcf > HEADER.txt
+cat  HEADER.txt format.imputed.vcf > new.format.imputed.vcf
 
 #### step2 get the specific pop input file
 grep "$batch" $admixture_proportion | cut -f1,3 > $batch.samples
