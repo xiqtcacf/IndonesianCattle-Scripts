@@ -1,0 +1,11 @@
+call_parameters:
+  baq: with # bcftools BAQ setting to use, "with", "without", or "partial" (recommended)
+ingroup: bos
+results_subdir: bos
+ref:
+  name: bosTau9
+  fa: /isdata/hellergrp/asianBos/Reference/bosTau9_plusY.fasta
+  fai: /isdata/hellergrp/asianBos/Reference/bosTau9_plusY.fasta.fai
+sites: /artemis-internal/casia16/asianbos/sites_QC/results/beds/autosome_rep_het_dep_map_noYnoX.bed
+tsv: bos_nodup_3banteng.tsv
+populations: bos_nodup_3banteng.pop

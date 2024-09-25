@@ -1,1 +1,11 @@
-
+call_parameters:
+  baq: with # bcftools BAQ setting to use, "with", "without", or "partial" (recommended)
+ingroup: bos
+results_subdir: bos
+ref:
+  name: water_buffalo
+  fa: /isdata/hellergrp/asianBos/Reference/water_buffalo.reference.fna
+  fai: /isdata/hellergrp/asianBos/Reference/water_buffalo.reference.fna.fai
+sites: /artemis-internal/casia16/asianbos/sites_QC_Waterbuffalo/beds/autosome_rep_het_dep_map.bed
+tsv: bos_nodup_3banteng_wtb.tsv
+populations: bos_nodup_3banteng_wtb.pop
