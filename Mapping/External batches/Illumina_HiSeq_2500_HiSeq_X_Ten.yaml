@@ -96,73 +96,128 @@ Genomes:
   Waterbuffalo:
     Path: /isdata/hellergrp/asianBos/raw_bams/genomes/water_buffalo.reference.fna
 
-
-NOVOGENE_BaliCattle_fromAusie:  ## Illumina adapter
+Illumina_HiSeq_2500_HiSeq_X_Ten:  ## Illumina adapter
   Options:
     AdapterRemoval:
        --adapter1: AGATCGGAAGAGCACACGTCTGAACTCCAGTCA
        --adapter2: AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
 
-  a10:
-    a10_FDSW210166086:
-      Lane_1: /isdata/hellergrp/asianBos/download_rawData/BaliCattle_fromAusie/a10_FDSW210166086-1r_HYKWTDSXY_L1_{Pair}.fq.gz
-  
-  a12:
-    a12_FDSW210166087:
-      Lane_1: /isdata/hellergrp/asianBos/download_rawData/BaliCattle_fromAusie/a12_FDSW210166087-1r_HYKWTDSXY_L1_{Pair}.fq.gz
-      Lane_2: /isdata/hellergrp/asianBos/download_rawData/BaliCattle_fromAusie/a12_FDSW210166087-1r_H75CFDSX2_L2_{Pair}.fq.gz
-  
-  a15:
-    a15_FDSW210166089:
-      Lane_1: /isdata/hellergrp/asianBos/download_rawData/BaliCattle_fromAusie/a15_FDSW210166089-1r_HYKWTDSXY_L1_{Pair}.fq.gz
-  
-  a1:
-    a1_FDSW210166084:
-      Lane_1: /isdata/hellergrp/asianBos/download_rawData/BaliCattle_fromAusie/a1_FDSW210166084-1r_H75H5DSX2_L4_{Pair}.fq.gz
-  
-  a3:
-    a3_FDSW210166085:
-      Lane_1: /isdata/hellergrp/asianBos/download_rawData/BaliCattle_fromAusie/a3_FDSW210166085-1r_H75H5DSX2_L2_{Pair}.fq.gz
-  
-  a45:
-    a45_FDSW210166088:
-      Lane_1: /isdata/hellergrp/asianBos/download_rawData/BaliCattle_fromAusie/a45_FDSW210166088-1r_HYKWTDSXY_L1_{Pair}.fq.gz
-  
-  a47:
-    a47_FDSW210166090:
-      Lane_1: /isdata/hellergrp/asianBos/download_rawData/BaliCattle_fromAusie/a47_FDSW210166090-1r_HYKWTDSXY_L1_{Pair}.fq.gz
-      Lane_2: /isdata/hellergrp/asianBos/download_rawData/BaliCattle_fromAusie/a47_FDSW210166090-1r_H75CFDSX2_L2_{Pair}.fq.gz
-  
-  a48:
-    a48_FDSW210166091:
-      Lane_1: /isdata/hellergrp/asianBos/download_rawData/BaliCattle_fromAusie/a48_FDSW210166091-1r_H75H5DSX2_L3_{Pair}.fq.gz
-  
-  a49:
-    a49_FDSW210166092:
-      Lane_1: /isdata/hellergrp/asianBos/download_rawData/BaliCattle_fromAusie/a49_FDSW210166092-1r_H75H5DSX2_L3_{Pair}.fq.gz
-  
-  a50:
-    a50_FDSW210166093:
-      Lane_1: /isdata/hellergrp/asianBos/download_rawData/BaliCattle_fromAusie/a50_FDSW210166093-1r_H75H5DSX2_L3_{Pair}.fq.gz
+  Hariana_Har03:
+    Har03_lib1:
+      SRR6936539: /isdata/hellergrp/asianBos/download_rawData/all_raw/SRR6936539_{Pair}.fastq.gz
 
-  a5520185_1:
-    a5520185_1_FDSW210166083:
-      Lane_1: /isdata/hellergrp/asianBos/download_rawData/BaliCattle_fromAusie/a5520185_1_FDSW210166083-1r_H73GWDSX2_L2_{Pair}.fq.gz
-      Lane_2: /isdata/hellergrp/asianBos/download_rawData/BaliCattle_fromAusie/a5520185_1_FDSW210166083-1r_H75H5DSX2_L2_{Pair}.fq.gz
-  
-  a5:
-    a5_FDSW210166078:
-      Lane_1: /isdata/hellergrp/asianBos/download_rawData/BaliCattle_fromAusie/a5_FDSW210166078-1r_H75H5DSX2_L1_{Pair}.fq.gz
-  
-  a6:
-    a6_FDSW210166079:
-      Lane_1: /isdata/hellergrp/asianBos/download_rawData/BaliCattle_fromAusie/a6_FDSW210166079-1r_H75H5DSX2_L1_{Pair}.fq.gz
-  
-  a7:
-    a7_FDSW210166080:
-      Lane_1: /isdata/hellergrp/asianBos/download_rawData/BaliCattle_fromAusie/a7_FDSW210166080-1r_H75H5DSX2_L1_{Pair}.fq.gz
-  
-  a8:
-    a8_FDSW210166081:
-      Lane_1: /isdata/hellergrp/asianBos/download_rawData/BaliCattle_fromAusie/a8_FDSW210166081-1r_H73GWDSX2_L2_{Pair}.fq.gz
-      Lane_2: /isdata/hellergrp/asianBos/download_rawData/BaliCattle_fromAusie/a8_FDSW210166081-1r_H75H5DSX2_L2_{Pair}.fq.gz
+  Hariana_HARINDF_03:
+    Har03b:
+      ERR3305590: /isdata/hellergrp/asianBos/download_rawData/all_raw/ERR3305590_{Pair}.fastq.gz 
+
+  Tharparkar_Thar1:
+    Thar1_lib1:
+      SRR6936538: /isdata/hellergrp/asianBos/download_rawData/all_raw/SRR6936538_{Pair}.fastq.gz
+
+  Sahiwal_Sha3b:
+    Sha3b_lib1:
+      SRR6936540: /isdata/hellergrp/asianBos/download_rawData/all_raw/SRR6936540_{Pair}.fastq.gz
+
+  Lagune_LAGUNKM_040:
+    Lagune_LAGUNKM_040:
+      ERR3293557: /isdata/hellergrp/asianBos/download_rawData/all_raw/ERR3293557_{Pair}.fastq.gz
+
+  Somba_SOMTGOF_03437:
+    Somba2:
+      ERR3305591: /isdata/hellergrp/asianBos/download_rawData/all_raw/ERR3305591_{Pair}.fastq.gz
+
+  Scottish_Highland_HLAGBRM:
+    High2:
+      ERR3305587: /isdata/hellergrp/asianBos/download_rawData/all_raw/ERR3305587_{Pair}.fastq.gz
+
+  B._gaurus_W.Zoo_OGRUNKF_5:
+    Ga5:
+      ERR3305589: /isdata/hellergrp/asianBos/download_rawData/all_raw/ERR3305589_{Pair}.fastq.gz
+
+  Wannan_WN4M:
+    WN4M-Libray2:
+      SRR6024573: /isdata/hellergrp/asianBos/download_rawData/all_raw/SRR6024573_{Pair}.fastq.gz
+    WN4M-Libray1:
+      SRR5507199: /isdata/hellergrp/asianBos/download_rawData/all_raw/SRR5507199_{Pair}.fastq.gz
+
+  Wannan_WN8M:
+    WN8M-Libray2:
+      SRR6024574: /isdata/hellergrp/asianBos/download_rawData/all_raw/SRR6024574_{Pair}.fastq.gz 
+    WN8M-Libray1:
+      SRR5507198: /isdata/hellergrp/asianBos/download_rawData/all_raw/SRR5507198_{Pair}.fastq.gz
+
+  Guangfeng_JXGF1:
+    JXGF1-Libray1:
+      SRR5507286: /isdata/hellergrp/asianBos/download_rawData/all_raw/SRR5507286_{Pair}.fastq.gz
+
+  Guangfeng_JXGF2:
+    JXGF2-Libray1:
+      SRR5507285: /isdata/hellergrp/asianBos/download_rawData/all_raw/SRR5507285_{Pair}.fastq.gz
+
+  Jian_JXJA1:
+    JXJA1-Libray1:
+      SRR5507282: /isdata/hellergrp/asianBos/download_rawData/all_raw/SRR5507282_{Pair}.fastq.gz
+
+  Jian_JXJA2:
+    JXJA2-Libray1:
+      SRR5507281: /isdata/hellergrp/asianBos/download_rawData/all_raw/SRR5507281_{Pair}.fastq.gz
+
+  Leiqiong_HN5M:
+    HN5M-Libray1:
+      SRR5507190: /isdata/hellergrp/asianBos/download_rawData/all_raw/SRR5507190_{Pair}.fastq.gz
+
+  Leiqiong_HN12M:
+    HN12M-Libray1:
+      SRR5507189: /isdata/hellergrp/asianBos/download_rawData/all_raw/SRR5507189_{Pair}.fastq.gz
+
+  Wenshan_WS1:
+    WS1-Libray1:
+      SRR6024561: /isdata/hellergrp/asianBos/download_rawData/all_raw/SRR6024561_{Pair}.fastq.gz
+
+  Wenshan_WS8:
+    WS8-Libray1:
+      SRR6024577: /isdata/hellergrp/asianBos/download_rawData/all_raw/SRR6024577_{Pair}.fastq.gz
+
+  Dianzhong_DZ2:
+    DZ2-Libray1:
+      SRR6024567: /isdata/hellergrp/asianBos/download_rawData/all_raw/SRR6024567_{Pair}.fastq.gz
+
+  Dianzhong_DZ3:
+    DZ3-Libray1:
+      SRR6024568: /isdata/hellergrp/asianBos/download_rawData/all_raw/SRR6024568_{Pair}.fastq.gz
+
+  Weining_GZWN5:
+    GZWN5-Libray1:
+      SRR5507204: /isdata/hellergrp/asianBos/download_rawData/all_raw/SRR5507204_{Pair}.fastq.gz
+
+  Luxi_LX78:
+    LX78-Libray1:
+      SRR5507242: /isdata/hellergrp/asianBos/download_rawData/all_raw/SRR5507242_{Pair}.fastq.gz
+
+  Bohai_Black_BH1:
+    BH1-Libray1:
+      SRR5507227: /isdata/hellergrp/asianBos/download_rawData/all_raw/SRR5507227_{Pair}.fastq.gz
+
+  Muturu_MT002_014:
+    Muturu_MT002_014:
+      SRR5630650: /isdata/hellergrp/asianBos/download_rawData/all_raw/SRR5630650_{Pair}.fastq.gz
+
+  Muturu_MT003_016:
+    MT003-016:
+      SRR5630649: /isdata/hellergrp/asianBos/download_rawData/all_raw/SRR5630649_{Pair}.fastq.gz
+
+  Kazakh_HSK25M:
+    HSK25M-Libray1:
+      SRR5507260: /isdata/hellergrp/asianBos/download_rawData/all_raw/SRR5507260_{Pair}.fastq.gz
+
+  Kholmogory_KHO_A9:
+    A9:
+      SRR12095761: /isdata/hellergrp/asianBos/download_rawData/all_raw/SRR12095761_{Pair}.fastq.gz
+
+  Yanbian_A83:
+    A83-Libray1:
+      SRR5507273: /isdata/hellergrp/asianBos/download_rawData/all_raw/SRR5507273_{Pair}.fastq.gz
+
+  Tibetan_22M:
+    Xizan22M-Libray2:
+      SRR6024571: /isdata/hellergrp/asianBos/download_rawData/all_raw/SRR6024571_{Pair}.fastq.gz
