@@ -68,10 +68,3 @@ while read sample ; do
    rm 10kWindow.Archaic.Pro0.9.Chr*.$sample.$pop
 
 done < input/$pop.pure.inds
-
-
-## get 100% overlapping archaic regions among all individuals per Pop
-#    sort-bed 10kWindow.Archaic.Pro0.9.Chr${i}.$sample.$pop > Sorted.10kWindow.Archaic.Pro0.9.Chr${i}.$sample.$pop
-#    bedops --intersect Sorted.10kWindow.Archaic.Pro0.9.Chr${i}.*.$pop > 10kWindow.Archaic.Pro0.9.Chr${i}.$pop.bed
-#    rm Sorted.10kWindow.Archaic.Pro0.9.Chr${i}.*.$pop
-
