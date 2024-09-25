@@ -1,1 +1,9 @@
-
+groups:
+  bams: /isdata/hellergrp/asianBos/analysis_asianBos_Xi/3.site_filtering/depth/RemoveDupFD.Internal_Australia.BosTau9.full_path.bam_list.txt
+outmain: results
+chroms: /isdata/hellergrp/asianBos/analysis_asianBos_Xi/3.site_filtering/depth/bosTau9_plusY.fasta.fai.Ref.list
+angsdparams:
+  maxdepth: 10000
+  minQ: 30
+  minMapQ: 25
+allbed: /isdata/hellergrp/asianBos/analysis_asianBos_Xi/3.site_filtering/depth/bosTau9_plusY.fasta.fai.Ref.bed
