@@ -1,4 +1,4 @@
-##### HaploNet analyses #####
+##### HaploNet analyses ##### 
 
 ### haplonet train (clustering) ###
 for c in {28..56}
