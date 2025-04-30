@@ -1,4 +1,4 @@
-# Scripts for
+# Scripts for (still working)
 ## Wang, X., Nursyifa, C., ... Heller, R. (2024). Multiple origins and extensive bovine introgression shaped the highly diverse Indonesian cattle
 
 ### Mapping
