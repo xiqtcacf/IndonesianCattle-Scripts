@@ -1,0 +1,200 @@
+---
+title: "AsianBos_PlotGenomicFeaturesvAnc"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(tidyverse)
+winRec_m <- read.table("winRecD_m_50000windows.txt", header = T)
+winRec_f <- read.table("winRecD_f_50000windows.txt", header = T)
+
+
+#inner_join(winRec_f, winRec_m, by = c("start", "chr.x"))
+
+winRec_m$mapF <- winRec_f$mapF
+
+winRec_m <- mutate(winRec_m,
+                   max =  pmax(mapM, mapF), 
+                   min = pmin(mapM, mapF),
+                   max_is_f = (max == mapF))
+
+print(mean(winRec_m$max_is_f))
+
+winRec_m$relative <- winRec_m$max / winRec_m$min
+winRec_m$logdiff <- log(winRec_m$mapF / winRec_m$mapM)
+
+ggplot(winRec_m, aes(logdiff)) +
+  geom_histogram(bins = 150) +
+  xlim(c(-100, 100))
+
+ggplot(winRec_m) +
+  geom_density(mapping=aes(mapF), fill = "orangered", alpha = 0.5) +
+  geom_density(mapping=aes(mapM), fill = "aquamarine", alpha = 0.5) +
+  xlim(c(0, 0.001))
+
+ggplot(winRec_m) +
+  geom_density(mapping=aes(mapF), fill = "orangered", alpha = 0.5) +
+  geom_density(mapping=aes(mapM), fill = "aquamarine", alpha = 0.5) +
+  xlim(c(0, 0.001)) +
+  ylim(c(0, 2500))
+  
+  
+ggplot(winRec_m, aes(relative)) +
+  geom_histogram(bins = 150) + 
+  xlim(c(0.5, 10))
+
+winRec_m$meanRec <- (winRec_m$mapM + winRec_m$mapF) / 2
+
+winRec_m <- rename(winRec_m, chr = chr.y)
+```
+
+
+```{r}
+#plotting gaps and windows
+winRec_m %>% #filter(chr == "NC_037328.1") %>%
+  #filter(start < 3500001) %>%
+  ggplot() +
+  geom_segment(aes(x=start, xend=end, y=1, yend=1, size = 1)) + 
+  facet_wrap(~chr)
+
+df %>% filter(chr == "NC_037328.1") %>%
+  #filter(start < 3500001) %>%
+  ggplot() +
+  geom_segment(aes(x=start, xend=end, y=1, yend=1, size = 1)) + 
+  facet_wrap(~chr)
+```
+
+```{r}
+cons <- read.table("cons_wd50k.csv", sep = ",")
+
+#cons <- cons %>% filter(V1 == 1:29) %>% arrange(as.numeric(V1))
+
+colnames(cons) <- c("chrnr", "start", "conserved_sites")
+
+#fix chr names to same format
+cons$chr <- paste0("NC_0", cons$chrnr + 37327.1)
+
+ggplot(cons, aes(conserved_sites)) +
+  geom_density() +
+  facet_wrap(~chrnr)
+
+summary(cons$conserved_sites)
+```
+
+
+```{r}
+#df <- read.table("../genes_winD_50000Madura.txt", header = T)
+df <- read.table("Uabc_Loter_Gerp_pCon_genes_winD_50000_protCodePropBantengMadura.txt", header = T)
+
+#df <- inner_join(df, winRec_m, by = c("start", "chr"), suffix = c("", ".b"))  # recomb join
+#df <- inner_join(df, cons, by = c("start", "chr"), suffix = c("", ".b"))  # cons join
+
+
+### remove rows with very discretized propanc1?
+# incs <- 0:20/20
+# df <- df %>%
+#   filter(!prop_anc0 %in% incs)
+
+
+unique(df$chr)
+
+df <- df %>% mutate(splitby = totSites_ProtCod)  # pCons_meanPC / meanRec / conserved_sites
+df <- df %>% drop_na(splitby)
+splits <- 10
+
+df$splitby_rank <- rank(df$splitby, ties.method = "first")
+df <- within(df, quantile <- as.integer(cut(splitby_rank, quantile(splitby_rank, probs=0:splits/splits, na.rm=T), include.lowest=TRUE)))
+
+quantile_means <- df %>% group_by(quantile) %>% 
+  summarise(mean_prop_anc1=mean(prop_anc1), .groups = "drop")
+
+quantile_medians <- df %>% group_by(quantile) %>% 
+  summarise(median_prop_anc1=median(prop_anc1), .groups = "drop")
+
+std_error_mean <- df %>% group_by(quantile) %>%
+  summarise(std_error = sd(prop_anc1)/sqrt(length(prop_anc1)), .groups = "drop")
+
+quantile_means <- merge.data.frame(quantile_means, std_error_mean)
+
+
+
+p1 <- ggplot() + 
+  geom_jitter(data=df, mapping=aes(x=as.factor(quantile), y=prop_anc1), alpha=0.2, color="coral") +
+  ggtitle("Proportion of Banteng ancestry by deciles of number of protein coding sites in 50kb windows") +
+  ylab("Proportion of Banteng ancestry") +
+  xlab("Decile") +
+  theme_classic()
+
+p2 <- p1 +
+  #geom_point(data=quantile_medians, mapping=aes(quantile, median_prop_anc1), color="red") +
+  #geom_point(data=quantile_means, mapping=aes(x=quantile, y=mean_prop_anc1), color="blue") +
+  geom_errorbar(data=quantile_means, mapping=aes(x=as.factor(quantile), ymin=mean_prop_anc1 - 1.96 * std_error, 
+                            ymax=mean_prop_anc1 + 1.96 * std_error))
+
+#print(p1)
+print(p2)
+
+ggplot(df, aes(prop_anc1)) +
+  geom_density(fill = "coral") +
+  facet_wrap(~quantile) +
+  theme_classic()
+
+ggplot(df, aes(splitby)) +
+  geom_density(fill = "coral") +
+  ggtitle("Kernel density estimate of the distribution of no. of protein coding sites in 50kb windows") +
+  xlab("No. of protein coding sites") +
+  #scale_x_continuous(limits=c(0, 1.5)) +
+  theme_classic()
+
+ggplot(df, aes(splitby, prop_anc1)) +
+  geom_point(color = "coral", alpha=0.1) +
+  theme_classic()
+
+
+
+cor <- cor.test(df$prop_anc1, df$splitby, method=c("pearson"))
+cor
+cor["p.value"]
+cor["estimate"]
+```
+
+```{r}
+### sanity checks
+df %>% count(quantile)
+
+df %>% filter(is.na(quantile)) %>% print()
+df %>% filter(is.na(prop_anc1)) %>% print()
+df %>% filter(is.na(splitby)) %>% print()
+
+df %>% count(prop_anc1) %>% arrange(n) %>% tail()
+df %>% count(prop_anc1) %>% arrange(n) %>% count(n)
+
+
+
+wd_in_df <- paste(df$chr, df$start)
+wd_in_winRec <- paste(winRec_m$chr, winRec_m$start)
+
+
+
+length(unique(wd_in_df))
+length(unique(wd_in_winRec))
+
+length(intersect(wd_in_df, wd_in_winRec))
+sym_diff <- function(a,b) setdiff(union(a,b), intersect(a,b))
+sym_diff(wd_in_df, wd_in_winRec)
+
+
+inner_join(count(df, chr), count(winRec_m , chr), by = "chr")
+
+
+#unique(dfjoined$chr)
+#df <- winRec_m
+```
+
+
+
+
