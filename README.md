@@ -1,5 +1,5 @@
 # Scripts for
-## Wang, X., Nursyifa, C., ... Heller, R. (2024). The genetic diversity of Indonesian cattle has been shaped by multiple introductions and adaptive introgression
+## Wang, X., Nursyifa, C., ... Heller, R. (2025). The genetic diversity of Indonesian cattle has been shaped by multiple introductions and adaptive introgression.
 
 ### 01_Mapping
 A pipeline for mapping and post-mapping filtering using PALEOMIX BAM pipeline.
