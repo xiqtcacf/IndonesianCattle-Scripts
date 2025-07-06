@@ -1,7 +1,0 @@
-ref: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/bosTau9.fasta
-outmain: results_BosTau9
-tmp_dir: /home/wlk579/Server_bos/scratch/tmp
-settings: #### for k, check multiple qc from QC results to see the reads length distribution
- k: 100
- e: 2
- m: 1
