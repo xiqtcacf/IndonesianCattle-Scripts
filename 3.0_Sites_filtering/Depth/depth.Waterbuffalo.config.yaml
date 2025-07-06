@@ -1,0 +1,9 @@
+groups:
+  bams: /isdata/hellergrp/wlk579/Bos_project/3.site_filtering/depth_water_buffalo/RemoveDupFD.Internal_Australia.Waterbuffalo.full_path.bam_list.txt
+outmain: results
+chroms: /isdata/hellergrp/wlk579/Bos_project/3.site_filtering/depth_water_buffalo/water_buffalo.reference.fna.fai.Ref.list
+angsdparams:
+  maxdepth: 10000
+  minQ: 30
+  minMapQ: 25
+allbed: /isdata/hellergrp/wlk579/Bos_project/3.site_filtering/depth_water_buffalo/water_buffalo.reference.fna.fai.Ref.bed

@@ -1,0 +1,7 @@
+# Exact versions of python modules used by scripts
+
+coloredlogs==15.0.1
+humanfriendly==10.0
+pysam==0.20.0
+ruamel.yaml==0.17.21
+ruamel.yaml.clib==0.2.7
