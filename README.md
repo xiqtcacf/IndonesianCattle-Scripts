@@ -1,5 +1,5 @@
-# Scripts for (still working)
-## Wang, X., Nursyifa, C., ... Heller, R. (2024). Multiple origins and extensive bovine introgression shaped the highly diverse Indonesian cattle
+# Scripts for
+## Wang, X., Nursyifa, C., ... Heller, R. (2024). The genetic diversity of Indonesian cattle has been shaped by multiple introductions and adaptive introgression
 
 ### Mapping
 A pipeline for mapping and post-mapping filtering using PALEOMIX BAM pipeline.
