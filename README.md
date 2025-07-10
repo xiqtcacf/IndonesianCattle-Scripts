@@ -51,7 +51,7 @@ Script to infer the population tree assuming different numbers of admixture even
 Script to infer the ancient admixture events, we calculated D statistics (ABBA-BABA) using the R package ADMIXTOOLS2.
 
 ### 12_MSMC2
-Script to infer divergence time between between zebu, banteng and Bali cattle using MSMC2.
+Script to infer divergence time between zebu, banteng and Bali cattle using MSMC2.
 
 ### 13_Loter
 Script to estimate genome-wide admixture proportions using local ancestry inference with LOTER;
