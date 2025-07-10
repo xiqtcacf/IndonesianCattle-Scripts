@@ -99,12 +99,6 @@ NOVOGENE:  ## Illumina adapter
     AdapterRemoval:
        --adapter1: AGGCCAAGCGGTCTTAGGAAGACAA
        --adapter2: AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
-
-  NOVOGENE:  ## Illumina adapter
-  Options:
-    AdapterRemoval:
-       --adapter1: AGGCCAAGCGGTCTTAGGAAGACAA
-       --adapter2: AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
        
   N_06_27:
     N_06_27_FDSW210065732:
