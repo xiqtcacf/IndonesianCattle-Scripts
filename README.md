@@ -68,7 +68,7 @@ data mapped to Banteng reference during revisions;
 
 data mapped to BosTau9 reference but without using Bali-Australia as source reference during revisions;
 
-data mapped to BosTau9 reference and from new downloaded Northernmost Southeast Asia and East Asia during revisions.
+data mapped to BosTau9 reference and from new downloaded Northernmost Southeast Asia and East Asian samples during revisions.
 
 Script to perform liftover from BosTau9 reference to Banteng reference during revisions. 
 
