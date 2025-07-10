@@ -1,0 +1,10 @@
+ingroup: bos
+results_subdir: AsianBos_SouthIndia_Waterbuffalo
+ref:
+  name: Waterbuffalo
+  fa: /home/wlk579/Server_bos/data/reference/water_buffalo.reference.fna
+  fai: /home/wlk579/Server_bos/data/reference/water_buffalo.reference.fna.fai
+sites: /home/wlk579/Server_bos/people/wlk579/Indonesia_Bos_project/Indonesia_Bos_project/Good_sites_Waterbuffalo/autosome_rep_het_dep_map.bed
+tsv: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/EmuZebu_SouthernIndian/GT_calling/tsvs/AsianBos.NewSouthIndia.Waterbuffalo.tsv
+populations: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/EmuZebu_SouthernIndian/GT_calling/tsvs/AsianBos.NewSouthIndia.Waterbuffalo.tsv
+tmp_dir: /home/wlk579/Server_bos/scratch/tmp/SouthIndia/waterbuffalo
