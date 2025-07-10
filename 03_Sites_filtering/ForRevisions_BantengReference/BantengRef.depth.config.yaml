@@ -1,0 +1,9 @@
+groups:
+  bams: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/sitesfiltering/depth/AsianBos.BantengRef.bamlist
+outmain: results
+chroms: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/Banteng_PlusMt.draft.fasta.fai.autosomes.list
+angsdparams:
+  maxdepth: 4000
+  minQ: 30
+  minMapQ: 25
+allbed: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/Banteng_PlusMt.draft.fasta.fai.autosomes.bed
