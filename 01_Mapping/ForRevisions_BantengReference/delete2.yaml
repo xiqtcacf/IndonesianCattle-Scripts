@@ -109,55 +109,24 @@ NOVOGENE:  ## Illumina adapter
       Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_2/raw_data/N_22/N_22_FDSW210065823-1a_HWJL7DSXY_L3_{Pair}.fq.gz
       Lane_2: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_2/raw_data/N_22/N_22_FDSW210065823-1r_HVTWGDSXY_L3_{Pair}.fq.gz
       Lane_3: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_2/raw_data/N_22/N_22_FDSW210065823-1r_HW3JJDSXY_L1_{Pair}.fq.gz
-#  N_23C:
-#    N_23C_FDSW210065754:
-#      Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_2/raw_data/N_23C/N_23C_FDSW210065754-1r_HVYL2DSXY_L4_{Pair}.fq.gz
-#  N_23_copy:
-#    N_23_copy_FDSW210065694:
-#      Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_2/raw_data/N_23_copy/N_23_copy_FDSW210065694-1b_HWGYLDSXY_L1_{Pair}.fq.gz
+
   N_25_15_10:
     N_25_15_10_FDSW210065717:
       Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_2/raw_data/N_25_15_10/N_25_15_10_FDSW210065717-1b_HWGYLDSXY_L1_{Pair}.fq.gz
       Lane_2: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_2/raw_data/N_25_15_10/N_25_15_10_FDSW210065717-1r_HVKLHDSXY_L2_{Pair}.fq.gz
-#  N_273:
-#    N_273_FDSW210065806:
-#      Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_2/raw_data/N_273/N_273_FDSW210065806-1r_HVKLHDSXY_L3_{Pair}.fq.gz
-#      Lane_2: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_2/raw_data/N_273/N_273_FDSW210065806-1r_HVYYVDSXY_L1_{Pair}.fq.gz
-#      Lane_3: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_2/raw_data/N_273/N_273_FDSW210065806-1r_HVYYVDSXY_L2_{Pair}.fq.gz
-#  N_29:
-#    N_29_FDSW210065698:
-#      Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_2/raw_data/N_29/N_29_FDSW210065698-1r_HVYL2DSXY_L2_{Pair}.fq.gz
-#      Lane_2: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_2/raw_data/N_29/N_29_FDSW210065698-1r_HWGYTDSXY_L1_{Pair}.fq.gz
-#  N_31B:
-#    N_31B_FDSW210065864:
-#      Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_2/raw_data/N_31B/N_31B_FDSW210065864-1r_HVYWCDSXY_L4_{Pair}.fq.gz
-#      Lane_2: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_2/raw_data/N_31B/N_31B_FDSW210065864-1r_HWGYTDSXY_L3_{Pair}.fq.gz
-#  N_37:
-#    N_37_FDSW210065703:
-#      Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_2/raw_data/N_37/N_37_FDSW210065703-1r_HVYL2DSXY_L2_{Pair}.fq.gz
+
   N_387:
     N_387_FDSW210065783:
       Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_2/raw_data/N_387/N_387_FDSW210065783-1r_HVYYVDSXY_L1_{Pair}.fq.gz
       Lane_2: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_2/raw_data/N_387/N_387_FDSW210065783-1r_HVYYVDSXY_L2_{Pair}.fq.gz
       Lane_3: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_2/raw_data/N_387/N_387_FDSW210065783-1r_HWGYTDSXY_L2_{Pair}.fq.gz
-#  N_40:
-#    N_40_FDSW210065705:
-#      Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_2/raw_data/N_40/N_40_FDSW210065705-1r_HWGM3DSXY_L1_{Pair}.fq.gz
+
   N_439:
     N_439_FDSW210065798:
       Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_2/raw_data/N_439/N_439_FDSW210065798-1r_HVYYVDSXY_L1_{Pair}.fq.gz
       Lane_2: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_2/raw_data/N_439/N_439_FDSW210065798-1r_HVYYVDSXY_L2_{Pair}.fq.gz
       Lane_3: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_2/raw_data/N_439/N_439_FDSW210065798-1r_HWGYTDSXY_L2_{Pair}.fq.gz
-#  N_45j:
-#    N_45j_FDSW210065715:
-#      Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_2/raw_data/N_45j/N_45j_FDSW210065715-1r_HVYL2DSXY_L2_{Pair}.fq.gz
-#  N_52:
-#    N_52_FDSW210065711:
-#      Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_2/raw_data/N_52/N_52_FDSW210065711-1r_HVYL2DSXY_L2_{Pair}.fq.gz
-#  N_5B_copy:
-#    N_5B_copy_FDSW210065867:
-#      Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_2/raw_data/N_5B_copy/N_5B_copy_FDSW210065867-1r_HVYWCDSXY_L2_{Pair}.fq.gz
-#      Lane_2: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_2/raw_data/N_5B_copy/N_5B_copy_FDSW210065867-1r_HWGYTDSXY_L3_{Pair}.fq.gz
+
   N_641:
     N_641_FDSW210065787:
       Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_2/raw_data/N_641/N_641_FDSW210065787-1r_HVYYVDSXY_L1_{Pair}.fq.gz
@@ -167,68 +136,30 @@ NOVOGENE:  ## Illumina adapter
     N_685_FDSW210065788:
       Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_2/raw_data/N_685/N_685_FDSW210065788-1r_HVYYVDSXY_L1_{Pair}.fq.gz
       Lane_2: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_2/raw_data/N_685/N_685_FDSW210065788-1r_HVYYVDSXY_L2_{Pair}.fq.gz
-#  N_6t_11:
-#    N_6t_11_FDSW210065894:
-#      Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_2/raw_data/N_6t_11/N_6t_11_FDSW210065894-1r_HVYWCDSXY_L2_{Pair}.fq.gz
-#  N_911_copy:
-#    N_911_copy_FDSW210065842:
-#      Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_2/raw_data/N_911_copy/N_911_copy_FDSW210065842-1r_HVYYVDSXY_L3_{Pair}.fq.gz
-#      Lane_2: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_2/raw_data/N_911_copy/N_911_copy_FDSW210065842-1r_HVYYVDSXY_L4_{Pair}.fq.gz
-#      Lane_3: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_2/raw_data/N_911_copy/N_911_copy_FDSW210065842-1r_HWGYTDSXY_L2_{Pair}.fq.gz
-#  N_925:
-#    N_925_FDSW210065839:
-#      Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_2/raw_data/N_925/N_925_FDSW210065839-1r_HVYYVDSXY_L3_{Pair}.fq.gz
-#      Lane_2: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_2/raw_data/N_925/N_925_FDSW210065839-1r_HVYYVDSXY_L4_{Pair}.fq.gz
-#  N_927_copy:
-#    N_927_copy_FDSW210065849:
-#      Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_2/raw_data/N_927_copy/N_927_copy_FDSW210065849-1r_HVYYVDSXY_L3_{Pair}.fq.gz
-#      Lane_2: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_2/raw_data/N_927_copy/N_927_copy_FDSW210065849-1r_HVYYVDSXY_L4_{Pair}.fq.gz
-#      Lane_3: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_2/raw_data/N_927_copy/N_927_copy_FDSW210065849-1r_HWGYTDSXY_L2_{Pair}.fq.gz
+
   N_938:
     N_938_FDSW210065832:
       Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_2/raw_data/N_938/N_938_FDSW210065832-1r_HW25MDSXY_L1_{Pair}.fq.gz
   N_941:
     N_941_FDSW210065837:
       Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_2/raw_data/N_941/N_941_FDSW210065837-1r_HW25MDSXY_L1_{Pair}.fq.gz
-#  N_mk01:
-#    N_mk01_FDSW210065897:
-#      Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_2/raw_data/N_mk01/N_mk01_FDSW210065897-1r_HW25MDSXY_L2_{Pair}.fq.gz
+
   N_05:
     N_05_FDSW210065688:
       Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_3/raw_data/N_05/N_05_FDSW210065688-1r_HVYL2DSXY_L1_{Pair}.fq.gz
   N_06_36:
     N_06_36_FDSW210065740:
       Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_3/raw_data/N_06_36/N_06_36_FDSW210065740-1r_HVYL2DSXY_L4_{Pair}.fq.gz
-#  N_06_RC:
-#    N_06_RC_FDSW210065733:
-#      Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_3/raw_data/N_06_RC/N_06_RC_FDSW210065733-1r_HVYL2DSXY_L3_{Pair}.fq.gz
+
   N_12B:
     N_12B_FDSW210065766:
       Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_3/raw_data/N_12B/N_12B_FDSW210065766-1r_HVYYVDSXY_L1_{Pair}.fq.gz
       Lane_2: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_3/raw_data/N_12B/N_12B_FDSW210065766-1r_HVYYVDSXY_L2_{Pair}.fq.gz
-#  N_13B:
-#    N_13B_FDSW210065872:
-#      Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_3/raw_data/N_13B/N_13B_FDSW210065872-1r_HVYWCDSXY_L2_{Pair}.fq.gz
-#  N_15B:
-#    N_15B_FDSW210065868:
-#      Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_3/raw_data/N_15B/N_15B_FDSW210065868-1r_HVYWCDSXY_L2_{Pair}.fq.gz
-#  N_20B:
-#    N_20B_FDSW210065871:
-#      Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_3/raw_data/N_20B/N_20B_FDSW210065871-1r_HVYWCDSXY_L2_{Pair}.fq.gz
-#  N_21C:
-#    N_21C_FDSW210065752:
-#      Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_3/raw_data/N_21C/N_21C_FDSW210065752-1r_HVYL2DSXY_L4_{Pair}.fq.gz
-#  N_24A:
-#    N_24A_FDSW210065768:
-#      Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_3/raw_data/N_24A/N_24A_FDSW210065768-1r_HVYYVDSXY_L1_{Pair}.fq.gz
-#      Lane_2: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_3/raw_data/N_24A/N_24A_FDSW210065768-1r_HVYYVDSXY_L2_{Pair}.fq.gz
+
   N_25_15_04:
     N_25_15_04_FDSW210065721:
       Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_3/raw_data/N_25_15_04/N_25_15_04_FDSW210065721-1r_HVYL2DSXY_L3_{Pair}.fq.gz
-#  N_25_15_12:
-#    N_25_15_12_FDSW210065723:
-#      Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_3/raw_data/N_25_15_12/N_25_15_12_FDSW210065723-1r_HVYL2DSXY_L3_{Pair}.fq.gz
-#      Lane_2: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_3/raw_data/N_25_15_12/N_25_15_12_FDSW210065723-1r_HWGYTDSXY_L2_{Pair}.fq.gz
+
   N_285:
     N_285_FDSW210065801:
       Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_3/raw_data/N_285/N_285_FDSW210065801-1r_HVYYVDSXY_L1_{Pair}.fq.gz
@@ -243,19 +174,7 @@ NOVOGENE:  ## Illumina adapter
       Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_3/raw_data/N_29C/N_29C_FDSW210065771-1r_HVYYVDSXY_L1_{Pair}.fq.gz
       Lane_2: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_3/raw_data/N_29C/N_29C_FDSW210065771-1r_HVYYVDSXY_L2_{Pair}.fq.gz
       Lane_3: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_3/raw_data/N_29C/N_29C_FDSW210065771-1r_HWGYTDSXY_L2_{Pair}.fq.gz
-#  N_30:
-#    N_30_FDSW210065699:
-#      Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_3/raw_data/N_30/N_30_FDSW210065699-1r_HVYL2DSXY_L3_{Pair}.fq.gz
-#      Lane_2: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_3/raw_data/N_30/N_30_FDSW210065699-1r_HWGYTDSXY_L2_{Pair}.fq.gz
-#  N_33B:
-#    N_33B_FDSW210065773:
-#      Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_3/raw_data/N_33B/N_33B_FDSW210065773-1r_HVKLHDSXY_L2_{Pair}.fq.gz
-#      Lane_2: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_3/raw_data/N_33B/N_33B_FDSW210065773-1r_HVYYVDSXY_L1_{Pair}.fq.gz
-#      Lane_3: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_3/raw_data/N_33B/N_33B_FDSW210065773-1r_HVYYVDSXY_L2_{Pair}.fq.gz
-#  N_34:
-#    N_34_FDSW210065702:
-#      Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_3/raw_data/N_34/N_34_FDSW210065702-1r_HVYL2DSXY_L2_{Pair}.fq.gz
-#      Lane_2: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_3/raw_data/N_34/N_34_FDSW210065702-1r_HWGYTDSXY_L2_{Pair}.fq.gz
+
   N_360:
     N_360_FDSW210065782:
       Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_3/raw_data/N_360/N_360_FDSW210065782-1r_HVYYVDSXY_L1_{Pair}.fq.gz
@@ -265,68 +184,24 @@ NOVOGENE:  ## Illumina adapter
     N_388_FDSW210065784:
       Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_3/raw_data/N_388/N_388_FDSW210065784-1r_HVYYVDSXY_L1_{Pair}.fq.gz
       Lane_2: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_3/raw_data/N_388/N_388_FDSW210065784-1r_HVYYVDSXY_L2_{Pair}.fq.gz
-#  N_48:
-#    N_48_FDSW210065708:
-#      Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_3/raw_data/N_48/N_48_FDSW210065708-1r_HVYL2DSXY_L2_{Pair}.fq.gz
-#  N_49:
-#    N_49_FDSW210065709:
-#      Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_3/raw_data/N_49/N_49_FDSW210065709-1r_HVYL2DSXY_L2_{Pair}.fq.gz
-#  N_51:
-#    N_51_FDSW210065686:
-#      Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_3/raw_data/N_51/N_51_FDSW210065686-1r_HVYL2DSXY_L1_{Pair}.fq.gz
+
   N_911:
     N_911_FDSW210065834:
       Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_3/raw_data/N_911/N_911_FDSW210065834-1r_HVYYVDSXY_L3_{Pair}.fq.gz
       Lane_2: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_3/raw_data/N_911/N_911_FDSW210065834-1r_HVYYVDSXY_L4_{Pair}.fq.gz
       Lane_3: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_3/raw_data/N_911/N_911_FDSW210065834-1r_HWGYTDSXY_L2_{Pair}.fq.gz
-#  N_924:
-#    N_924_FDSW210065846:
-#      Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_3/raw_data/N_924/N_924_FDSW210065846-1r_HVYYVDSXY_L3_{Pair}.fq.gz
-#      Lane_2: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_3/raw_data/N_924/N_924_FDSW210065846-1r_HVYYVDSXY_L4_{Pair}.fq.gz
-#  N_933:
-#    N_933_FDSW210065850:
-#      Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_3/raw_data/N_933/N_933_FDSW210065850-1r_HVYYVDSXY_L3_{Pair}.fq.gz
-#      Lane_2: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_3/raw_data/N_933/N_933_FDSW210065850-1r_HVYYVDSXY_L4_{Pair}.fq.gz
-#      Lane_3: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_3/raw_data/N_933/N_933_FDSW210065850-1r_HWGYTDSXY_L2_{Pair}.fq.gz
-#  N_934:
-#    N_934_FDSW210065851:
-#      Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_3/raw_data/N_934/N_934_FDSW210065851-1r_HVYYVDSXY_L3_{Pair}.fq.gz
-#      Lane_2: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_3/raw_data/N_934/N_934_FDSW210065851-1r_HVYYVDSXY_L4_{Pair}.fq.gz
-#      Lane_3: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_3/raw_data/N_934/N_934_FDSW210065851-1r_HWGYTDSXY_L2_{Pair}.fq.gz
-#  N_gt8:
-#    N_gt8_FDSW210065881:
-#      Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_3/raw_data/N_gt8/N_gt8_FDSW210065881-1r_HW25MDSXY_L2_{Pair}.fq.gz
-#  N_mk1:
-#    N_mk1_FDSW210065895:
-#      Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_3/raw_data/N_mk1/N_mk1_FDSW210065895-1r_HW25MDSXY_L2_{Pair}.fq.gz
-#  N_wn_2:
-#    N_wn_2_FDSW210065887:
-#      Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_3/raw_data/N_wn_2/N_wn_2_FDSW210065887-1r_HW25MDSXY_L2_{Pair}.fq.gz
+
   N_06_05:
     N_06_05_FDSW210065726:
       Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_4/raw_data/N_06_05/N_06_05_FDSW210065726-1r_HVYL2DSXY_L3_{Pair}.fq.gz
       Lane_2: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_4/raw_data/N_06_05/N_06_05_FDSW210065726-1r_HWGYTDSXY_L2_{Pair}.fq.gz
-#  N_09:
-#    N_09_FDSW210065690:
-#      Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_4/raw_data/N_09/N_09_FDSW210065690-1r_HVYL2DSXY_L1_{Pair}.fq.gz
+
   N_093:
     N_093_FSFP210065797:
       Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_4/raw_data/N_093/N_093_FSFP210065797-1a_HWJL7DSXY_L3_{Pair}.fq.gz
       Lane_2: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_4/raw_data/N_093/N_093_FSFP210065797-1r_HVTWGDSXY_L2_{Pair}.fq.gz
       Lane_3: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_4/raw_data/N_093/N_093_FSFP210065797-1r_HW3JJDSXY_L1_{Pair}.fq.gz
-#  N_093_2:
-#    N_093_2_FDSW210065780:
-#      Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_4/raw_data/N_093_2/N_093_2_FDSW210065780-1r_HVYYVDSXY_L1_{Pair}.fq.gz
-#      Lane_2: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_4/raw_data/N_093_2/N_093_2_FDSW210065780-1r_HVYYVDSXY_L2_{Pair}.fq.gz
-#  N_1057:
-#    N_1057_FDSW210065793:
-#      Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_4/raw_data/N_1057/N_1057_FDSW210065793-1r_HVYYVDSXY_L1_{Pair}.fq.gz
-#      Lane_2: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_4/raw_data/N_1057/N_1057_FDSW210065793-1r_HVYYVDSXY_L2_{Pair}.fq.gz
-#      Lane_3: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_4/raw_data/N_1057/N_1057_FDSW210065793-1r_HWGYTDSXY_L2_{Pair}.fq.gz
-#  N_10_692:
-#    N_10_692_FDSW210065854:
-#      Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_4/raw_data/N_10_692/N_10_692_FDSW210065854-1r_HVYYVDSXY_L3_{Pair}.fq.gz
-#      Lane_2: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_4/raw_data/N_10_692/N_10_692_FDSW210065854-1r_HVYYVDSXY_L4_{Pair}.fq.gz
+
   N_10_918:
     N_10_918_FDSW210065856:
       Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_4/raw_data/N_10_918/N_10_918_FDSW210065856-1r_HVYWCDSXY_L3_{Pair}.fq.gz
