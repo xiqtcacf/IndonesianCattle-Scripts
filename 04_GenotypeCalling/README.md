@@ -1,4 +1,4 @@
-# a1kg genotype calling pipeline
+# a1kg genotype calling pipeline (original developed)
 
 An overview of how to use the genotype calling pipeline developed for the a1kg project.
 
