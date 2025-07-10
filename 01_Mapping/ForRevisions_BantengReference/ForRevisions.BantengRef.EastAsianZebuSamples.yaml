@@ -93,12 +93,7 @@ Genomes:
     Path: /home/wlk579/Server_bos/data/reference/banteng_denovo/Banteng_PlusMt.draft.fasta
 
 
-# Name-of-group:
-#   Name-of-individual: # (Also used as filename for the bam)
-#     Name-of-library:
-#       Name-of-lane-or-lanes: "/path/to/*.fastq.gz"
-
-Illumina_HiSeq_2500_HiSeq_X_Ten:  ## Illumina adapter
+Illumina:  ## Illumina adapter
   Options:
     AdapterRemoval:
        --adapter1: AGATCGGAAGAGCACACGTCTGAACTCCAGTCA
