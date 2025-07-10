@@ -1,0 +1,10 @@
+ingroup: bos
+results_subdir: AsianBos_BantengRef
+ref:
+  name: Banteng_PlusMt.draft
+  fa: /home/wlk579/1.0JavaBanteng_project/3.sites_filtering/Banteng_PlusMt.draft.fasta
+  fai: /home/wlk579/1.0JavaBanteng_project/3.sites_filtering/Banteng_PlusMt.draft.fasta.fai
+sites: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/sitesfiltering/BantengRef_AsianBos/nosexLinkedAndAbnormalScaff_rep_het_dep_map.bed
+tsv: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/GT_calling/tsvs/AsianBos.BantengRef.ForLoter.tsv
+populations: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/GT_calling/tsvs/AsianBos.BantengRef.ForLoter.tsv
+tmp_dir: /home/wlk579/Server_bos/scratch/tmp/Banteng
