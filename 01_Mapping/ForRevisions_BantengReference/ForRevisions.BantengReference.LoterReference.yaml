@@ -235,7 +235,7 @@ Illumina:  ## Illumina adapter
      run035 : /home/wlk579/Server_bos/data/Captive_Texas_Banteng/LIB112409_S8_R{Pair}_001.fastq.gz
      run036 : /home/wlk579/Server_bos/data/Captive_Texas_Banteng/LIB112409_S5_R{Pair}_001.fastq.gz
 
-#### reference for Loter, Sumba Ongole + south Asian zebu
+#### reference for Loter,  south Asian zebu + Sumba Ongole(please see this pop in the other .yaml file)
   Nelore_BINE1:
     BINE1:
       SRR2016756: /home/wlk579/Server_bos/people/wlk579/Banteng_project/0.data_bams_BantengRef/all_other_map/fastq/SRR2016756_{Pair}.fastq.gz
