@@ -50,7 +50,9 @@ Script to infer the population tree assuming different numbers of admixture even
 ### 11_Dstatistics
 Script to infer the ancient admixture events, we calculated D statistics (ABBA-BABA) using the R package ADMIXTOOLS2;
 
-Scripts to check the performance of masking based on LOTER results, we performed a check by recalculating D-statistics before and after masking all SNPs inferred to be introgressed in each sample when adding previously sampes and new downloaded samples from Northernmost Southeast Asia and East Asia during revisions.
+Scripts to check the performance of masking based on LOTER results:
+
+we performed a check by recalculating D-statistics before and after masking all SNPs inferred to be introgressed in each sample when adding previously samples and new downloaded samples from Northernmost Southeast Asia and East Asia during revisions.
 
 ### 12_MSMC2
 Script to infer divergence time between zebu, banteng and Bali cattle using MSMC2.
