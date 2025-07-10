@@ -96,71 +96,68 @@ Genomes:
   Waterbuffalo:
     Path: /home/wlk579/Server_bos/data/reference/water_buffalo.reference.fna
 
-# Name-of-group:
-#   Name-of-individual: # (Also used as filename for the bam)
-#     Name-of-library:
-#       Name-of-lane-or-lanes: "/path/to/*.fastq.gz"
-
 Illumina:  ## Illumina adapter
   Options:
     AdapterRemoval:
        --adapter1: AGATCGGAAGAGCACACGTCTGAACTCCAGTCA
        --adapter2: AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
 
+  Bangladesh_IM7:
+    IM7:
+      SRR12560200: /home/wlk579/Server_bos/people/wlk579/Ancient_Bos_project/data_bams/0rawBamSupply/raw_fastq/SRR12560200_{Pair}.fastq.gz
+  Bangladesh_IM1:
+    IM1:
+      SRR12560246: /home/wlk579/Server_bos/people/wlk579/Ancient_Bos_project/data_bams/0rawBamSupply/raw_fastq/SRR12560246_{Pair}.fastq.gz
+  Bangladesh_IM5:
+    IM5:
+      SRR12560212: /home/wlk579/Server_bos/people/wlk579/Ancient_Bos_project/data_bams/0rawBamSupply/raw_fastq/SRR12560212_{Pair}.fastq.gz
+  Dehong_DH2A:
+    DH2A:
+      SRR17458595: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/EmuZebu_SouthernIndian/SouthernIndianSamples/fastq/SRR17458595_{Pair}.fastq.gz
+  Dehong_DH3:
+    DH3:
+      SRR17458594: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/EmuZebu_SouthernIndian/SouthernIndianSamples/fastq/SRR17458594_{Pair}.fastq.gz
+  Jiangcheng_JC2:
+    JC2:
+      SRR17458593: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/EmuZebu_SouthernIndian/SouthernIndianSamples/fastq/SRR17458593_{Pair}.fastq.gz
+  Jiangcheng_JC3A:
+    JC3A:
+      SRR17458592: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/EmuZebu_SouthernIndian/SouthernIndianSamples/fastq/SRR17458592_{Pair}.fastq.gz
+  Kailali_s_4MKi:
+    s_4MKi:
+      SRR17344640: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/EmuZebu_SouthernIndian/SouthernIndianSamples/fastq/SRR17344640_{Pair}.fastq.gz
   Kapilvastu_s_T11M:
     s_T11M:
       SRR17344650: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/EmuZebu_SouthernIndian/SouthernIndianSamples/fastq/SRR17344650_{Pair}.fastq.gz
-
-#  Saptari_s_1MSa:
-#    s_1MSa:
-#      SRR17344653: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/EmuZebu_SouthernIndian/SouthernIndianSamples/fastq/SRR17344653_{Pair}.fastq.gz
-
-#  Kailali_s_4MKi:
-#    s_4MKi:
-#      SRR17344640: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/EmuZebu_SouthernIndian/SouthernIndianSamples/fastq/SRR17344640_{Pair}.fastq.gz
-
-#  Shigatse_RK10A:
-#    RK10A:
-#      SRR17381676: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/EmuZebu_SouthernIndian/SouthernIndianSamples/fastq/SRR17381676_{Pair}.fastq.gz
-
-#  Shigatse_RK8A:
-#    RK8A:
-#      SRR17381674: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/EmuZebu_SouthernIndian/SouthernIndianSamples/fastq/SRR17381674_{Pair}.fastq.gz
-
-#  Dehong_DH2A:
-#    DH2A:
-#      SRR17458595: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/EmuZebu_SouthernIndian/SouthernIndianSamples/fastq/SRR17458595_{Pair}.fastq.gz
-
-#  Dehong_DH3:
-#    DH3:
-#      SRR17458594: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/EmuZebu_SouthernIndian/SouthernIndianSamples/fastq/SRR17458594_{Pair}.fastq.gz
-
-
-
-#  Mengsong_MSH3:
-#    MSH3:
-#      SRR17458597: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/EmuZebu_SouthernIndian/SouthernIndianSamples/fastq/SRR17458597_{Pair}.fastq.gz
-
-#  Mengsong_MS4:
-#    MS4:
-#      SRR17458601: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/EmuZebu_SouthernIndian/SouthernIndianSamples/fastq/SRR17458601_{Pair}.fastq.gz
-
-
-
-
-
-#  Jiangcheng_JC2:
-#    JC2:
-#      SRR17458593: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/EmuZebu_SouthernIndian/SouthernIndianSamples/fastq/SRR17458593_{Pair}.fastq.gz
-
-#  Jiangcheng_JC3A:
-#    JC3A:
-#      SRR17458592: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/EmuZebu_SouthernIndian/SouthernIndianSamples/fastq/SRR17458592_{Pair}.fastq.gz
-
-#  Longlin_LL29A:
-#    LL29A:
-#      SRR17333529: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/EmuZebu_SouthernIndian/SouthernIndianSamples/fastq/SRR17333529_{Pair}.fastq.gz
-
-#  Longlin_LL11A:
-#    LL11A:
-#      SRR17333534: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/EmuZebu_SouthernIndian/SouthernIndianSamples/fastq/SRR17333534_{Pair}.fastq.gz
+  Longlin_LL29A:
+    LL29A:
+      SRR17333529: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/EmuZebu_SouthernIndian/SouthernIndianSamples/fastq/SRR17333529_{Pair}.fastq.gz
+  Longlin_LL11A:
+    LL11A:
+      SRR17333534: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/EmuZebu_SouthernIndian/SouthernIndianSamples/fastq/SRR17333534_{Pair}.fastq.gz
+  Myanmar_MD13A:
+    MD13A:
+      SRR17381672: /home/wlk579/Server_bos/people/wlk579/Ancient_Bos_project/data_bams/0rawBamSupply/raw_fastq/SRR17381672_{Pair}.fastq.gz
+  Myanmar_MD16:
+    MD16:
+      SRR17381669: /home/wlk579/Server_bos/people/wlk579/Ancient_Bos_project/data_bams/0rawBamSupply/raw_fastq/SRR17381669_{Pair}.fastq.gz
+  Myanmar_MD20:
+    MD20:
+      SRR12560236: /home/wlk579/Server_bos/people/wlk579/Ancient_Bos_project/data_bams/0rawBamSupply/raw_fastq/SRR12560236_{Pair}.fastq.gz
+  Saptari_s_1MSa:
+    s_1MSa:
+      SRR17344653: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/EmuZebu_SouthernIndian/SouthernIndianSamples/fastq/SRR17344653_{Pair}.fastq.gz
+  Shigatse_RK10A:
+    RK10A:
+      SRR17381676: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/EmuZebu_SouthernIndian/SouthernIndianSamples/fastq/SRR17381676_{Pair}.fastq.gz
+  Shigatse_RK8A:
+    RK8A:
+      SRR17381674: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/EmuZebu_SouthernIndian/SouthernIndianSamples/fastq/SRR17381674_{Pair}.fastq.gz
+  Sri_Lanka_CA288:
+    CA288:
+      CRR193991: /isdata/hellergrp/wlk579/Gaur_Gayal_project/raw_fastq/CRR193991_{Pair}.fastq.gz
+      CRR193992: /isdata/hellergrp/wlk579/Gaur_Gayal_project/raw_fastq/CRR193992_{Pair}.fastq.gz
+  Sri_Lanka_CA279:
+    CA279:
+      CRR193989: /isdata/hellergrp/wlk579/Gaur_Gayal_project/raw_fastq/CRR193989_{Pair}.fastq.gz
+      CRR193990: /isdata/hellergrp/wlk579/Gaur_Gayal_project/raw_fastq/CRR193990_{Pair}.fastq.gz
