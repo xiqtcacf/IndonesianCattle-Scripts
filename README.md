@@ -48,7 +48,9 @@ Script to infer Pairwise global Fst between each pair of populations using PLINK
 Script to infer the population tree assuming different numbers of admixture events using TreeMix.
 
 ### 11_Dstatistics
-Script to infer the ancient admixture events, we calculated D statistics (ABBA-BABA) using the R package ADMIXTOOLS2.
+Script to infer the ancient admixture events, we calculated D statistics (ABBA-BABA) using the R package ADMIXTOOLS2;
+
+Scripts to check the performance of masking based on LOTER results, we performed a check by recalculating D-statistics before and after masking all SNPs inferred to be introgressed in each sample when adding previously sampes and new downloaded samples from Northernmost Southeast Asia and East Asia during revisions.
 
 ### 12_MSMC2
 Script to infer divergence time between zebu, banteng and Bali cattle using MSMC2.
@@ -58,7 +60,15 @@ Script to estimate genome-wide admixture proportions using local ancestry infere
 
 Script to estimate genome-wide admixture proportions using local ancestry inference on the X chromosome with LOTER;
 
-Script to estimate genome-wide admixture proportions using local ancestry inference with LOTER, based on data mapped to Banteng reference during revisions.
+Scripts to estimate genome-wide admixture proportions using local ancestry inference with LOTER, based on:
+
+data mapped to Banteng reference during revisions;
+
+data mapped to BosTau9 reference but without using Bali-Australia as source reference during revisions;
+
+data mapped to BosTau9 reference and from new downloaded Northernmost Southeast Asia and East Asia during revisions.
+
+Script to perform liftover from BosTau9 reference to Banteng reference during revisions. 
 
 ### 14_Loter_Heterozygosity_in_ancestry_States
 Script to calculate heterozygosity in each of the three ancestry states along the genome in admixed breeds: tracts homozygous for zebu ancestry, tracts heterozygous for zebu/banteng ancestry, and tracts homozygous for banteng ancestry.
@@ -74,7 +84,7 @@ Script to calculate the genetic similarity of each introgressed region identifie
 Script to infer genetic distance (ibs) shared between pairs of individuals within introgressed regions identified by Hmmix.
 
 ### 17_Ux
-Script to to identify putatively adaptively introgressed regions using a metric Ux.
+Script to identify putatively adaptively introgressed regions using a metric Ux.
 
 ### 18_Thomas_Correlation_Ancestry_GenomicFeatures
 Script to calculate the correlation between the mean banteng ancestry and three genomic features: recombination rate, conservation score, and coding region density in Madura cattle.
@@ -82,7 +92,9 @@ Script to calculate the correlation between the mean banteng ancestry and three 
 ### 19_EMU-PCA_in_ancestry_regions
 Script to infer PCA for zebu-specific and banteng-specific ancestry regions identified by LOTER using EMU;
 
-Script to infer PCA for zebu-specific and banteng-specific ancestry regions identified by Hmmix using EMU.
+Script to infer PCA for zebu-specific and banteng-specific ancestry regions identified by Hmmix using EMU;
+
+Script to infer PCA for zebu-specific ancestry regions identified by Loter using EMU when adding new samples from Northernmost Southeast Asia and East Asia during revisions.
 
 ### 20_AncestryHMM-AdmixtureTime
 Script to inferred the introgression time using AncestryHMM.
