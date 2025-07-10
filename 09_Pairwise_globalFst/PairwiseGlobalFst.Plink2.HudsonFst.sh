@@ -10,5 +10,4 @@ plink2=/isdata/hellergrp/wlk579/software/plink2/plink2
 bcftools view -S purepop.inds $bcf -o purepop.imputated.BosTau9.bcf -O b
 bcftools index purepop.imputated.BosTau9.bcf
 $plink2 --bcf purepop.imputated.BosTau9.bcf --make-bed --out purepop.imputated.BosTau9 --allow-extra-chr
-$plink2 --bfile breeds.imputated.BosTau9 --fst breeds.new.new.txt --family breeds.new.new.txt --out breeds.imputated.BosTau9.fst --allow-extra-chr
-
+$plink2 --bfile purepop.imputated.BosTau9 --fst purepop.new.new.txt --family purepop.new.new.txt --out purepop.imputated.BosTau9.fst --allow-extra-chr
