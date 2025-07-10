@@ -18,8 +18,6 @@ regions=$(bcftools index -s $VCF |perl -slane '$size=10000000; $n=sprintf("%f", 
 # echo $regions | tr " " "\n" | parallel -j $threads -k -I {} runBeagle3_by_region {} $VCF $OUT $beagle3
 #wait
 #echo "runBeagle3_by_region done"
-
-
 echo "start concating files by chromos"
 chroms=$(bcftools index -s $VCF | cut -f1)      # not array just string sep by space
 
@@ -27,25 +25,6 @@ for chr in $chroms;do
   {
     rgs=$(echo $regions | tr ' ' '\n' | grep -w $chr)
     out=$outdir/$chr
-    #n=1
-    #for i in $rgs;do
-    #  gps=$outdir/`basename $VCF`.$i.BEAGLE.GL.gprobs.gz
-    #  if [ $n == 1 ]; then
-    #    zcat $gps ;
-    #  else
-    #    zcat $gps | awk "NR>1";
-    #  fi
-    #  n=$((n + 1))
-    #done | gzip -c >$out.gprobs.gz
-    #zcat $out.gprobs.gz | java -jar /isdata/hellergrp/wlk579/software/BioScripts/gprobs2beagle.jar 0.9 -1 | gzip -c >$out.bgl.gz && \
-    #  zcat $out.gprobs.gz | awk 'NR>1{split($1,a,":");print $1,a[2],$2,$3}' >$out.bgl.sites && \
-    #  java -jar /isdata/hellergrp/wlk579/software/BioScripts/beagle2vcf.jar $chr $out.bgl.sites $out.bgl.gz -1 |bgzip -c >$out.vcf.gz && \
-    #  bcftools index -f $out.vcf.gz && echo "convert $chr to vcf done"
-    #
-    #for i in $rgs;do
-    #  cat $outdir/`basename $VCF`.$i.BEAGLE.GL.r2
-    #done >$out.r2
-
     n=1
     for i in $rgs;do
       phs=$outdir/`basename $VCF`.$i.BEAGLE.GL.phased.gz
