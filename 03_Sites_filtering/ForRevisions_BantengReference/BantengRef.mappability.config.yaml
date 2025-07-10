@@ -1,0 +1,7 @@
+ref: /home/wlk579/Server_bos/data/reference/banteng_denovo/Banteng_PlusMt.draft.fasta
+outmain: results
+tmp_dir: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/sitesfiltering/tmp/
+settings: #### for k, check multiple qc from QC results to see the reads length distribution
+ k: 100
+ e: 2
+ m: 1

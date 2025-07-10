@@ -1,0 +1,28 @@
+info: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/sitesfiltering/excess_het/Internal.AsianBos.BantengRef.bamlist.info
+outmain: "results"
+scriptsdir: "scripts"
+chroms: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/Banteng_PlusMt.draft.fasta.fai.autosomes.list
+ref: /maps/projects/bos/people/wlk579/Banteng_project/3.sites_filtering/Banteng_PlusMt.draft.fasta
+params:
+ angsd:
+  minQ: 30
+  minMapQ: 25
+ pcangsd:
+  e:
+   - 0
+   - 1
+   - 2
+   - 3
+   - 4
+   - 5
+   - 6
+   - 7
+   - 8
+   - 9
+   - 10
+ filter:
+  minF: -0.9
+  w: 10000
+  lrt: 24
+  
+  
