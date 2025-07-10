@@ -1,0 +1,236 @@
+# -*- mode: Yaml; -*-
+# Default options.
+# Can also be specific for a set of samples, libraries, and lanes,
+# by including the "Options" hierarchy at the same level as those
+# samples, libraries, or lanes below.
+Options:
+  # Sequencing platform, see SAM/BAM reference for valid values
+  Platform: Illumina
+  # Quality offset for Phred scores, either 33 (Sanger/Illumina 1.8+)
+  # or 64 (Illumina 1.3+ / 1.5+). For Bowtie2 it is also possible to
+  # specify 'Solexa', to handle reads on the Solexa scale. This is
+  # used during adapter-trimming and sequence alignment
+  QualityOffset: 33
+
+  # Settings for trimming of reads, see AdapterRemoval man-page
+  AdapterRemoval:
+     # Set and uncomment to override defaults adapter sequences
+     --adapter1: TODO
+     --adapter2: TODO
+     # Some BAM pipeline defaults differ from AR defaults;
+     # To override, change these value(s):
+     --mm: 3
+     --minlength: 1
+     # Extra features enabled by default; change 'yes' to 'no' to disable
+     --collapse:
+     --collapse-conservatively:
+
+  # Settings for aligners supported by the pipeline
+  Aligners:
+    # Choice of aligner software to use, either "BWA" or "Bowtie2"
+    Program: BWA
+
+    # Settings for mappings performed using BWA
+    BWA:
+      # One of "backtrack", "bwasw", or "mem"; see the BWA documentation
+      # for a description of each algorithm (defaults to 'backtrack')
+      Algorithm: mem
+      # Filter aligned reads with a mapping quality (Phred) below this value
+      MinQuality: 0
+      # Filter reads that did not map to the reference sequence
+      FilterUnmappedReads: no
+      # May be disabled ("no") for aDNA alignments with the 'aln' algorithm.
+      # Post-mortem damage localizes to the seed region, which BWA expects to
+      # have few errors (sets "-l"). See http://pmid.us/22574660
+      UseSeed: yes
+      # Additional command-line options may be specified below. For 'backtrack' these
+      # are applied to the "bwa aln". See Bowtie2 for more examples.
+#      -n: 0.04
+
+  # Command-line options for mapDamage; use long-form options(--length not -l):
+  mapDamage:
+    # By default, the pipeline will downsample the input to 100k hits
+    # when running mapDamage; remove to use all hits
+    --downsample: 100000
+
+  # Set to 'yes' exclude a type of trimmed reads from alignment / analysis;
+  # possible read-types reflect the output of AdapterRemoval
+  ExcludeReads:
+    # Exclude single-end reads (yes / no)?
+    Single: no
+    # Exclude non-collapsed paired-end reads (yes / no)?
+    Paired: no
+    # Exclude paired-end reads for which the mate was discarded (yes / no)?
+    Singleton: no
+    # Exclude overlapping paired-ended reads collapsed into a single sequence
+    # by AdapterRemoval (yes / no)?
+    Collapsed: no
+    # Like 'Collapsed', but only for collapsed reads truncated due to the
+    # presence of ambiguous or low quality bases at read termini (yes / no).
+    CollapsedTruncated: no
+
+  # Optional steps to perform during processing.
+  Features:
+    # If set to 'filter', PCR duplicates are removed from the output files; if set to
+    # 'mark', PCR duplicates are flagged with bit 0x400, and not removed from the
+    # output files; if set to 'no', the reads are assumed to not have been amplified.
+    PCRDuplicates: mark
+    # Set to 'no' to disable mapDamage; set to 'plots' to build basic mapDamage plots;
+    # set to 'model' to build plots and post-mortem damage models; and set to 'rescale'
+    # to build plots, models, and BAMs with rescaled quality scores. All analyses are
+    # carried out per library.
+    mapDamage: no
+    # Generate coverage information for the final BAM and for each 'RegionsOfInterest'
+    # specified in 'Prefixes' (yes / no).
+    Coverage: no
+    # Generate histograms of number of sites with a given read-depth, from 0 to 200,
+    # for each BAM and for each 'RegionsOfInterest' specified in 'Prefixes' (yes / no).
+    Depths: no
+    # Generate summary table for each target (yes / no)
+    Summary: no
+
+
+Genomes:
+#  BosTau9:
+#    Path: /isdata/hellergrp/asianBos/raw_bams/genomes/GCF_002263795.1_ARS-UCD1.2_genomic.fasta
+#  Waterbuffalo:
+#    Path: /isdata/hellergrp/asianBos/raw_bams/genomes/water_buffalo.reference.fna
+  Banteng:
+    Path: /home/wlk579/Server_bos/data/reference/banteng_denovo/Banteng_PlusMt.draft.fasta
+
+
+NOVOGENE:  ## Illumina adapter
+  Options:
+    AdapterRemoval:
+       --adapter1: AGGCCAAGCGGTCTTAGGAAGACAA
+       --adapter2: AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
+
+#  N_024:
+#    N_024_FDSW210065807:
+#      Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_1/raw_data/N_024/N_024_FDSW210065807-1r_HVYYVDSXY_L3_{Pair}.fq.gz
+#      Lane_2: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_1/raw_data/N_024/N_024_FDSW210065807-1r_HVYYVDSXY_L4_{Pair}.fq.gz
+  N_06_27:
+    N_06_27_FDSW210065732:
+      Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_1/raw_data/N_06_27/N_06_27_FDSW210065732-1r_HVYL2DSXY_L3_{Pair}.fq.gz
+  N_06_37:
+    N_06_37_FDSW210065728:
+      Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_1/raw_data/N_06_37/N_06_37_FDSW210065728-1r_HVYL2DSXY_L3_{Pair}.fq.gz
+      Lane_2: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_1/raw_data/N_06_37/N_06_37_FDSW210065728-1r_HWGYTDSXY_L2_{Pair}.fq.gz
+#  N_06_37_2:
+#    N_06_37_2_FDSW210065741:
+#      Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_1/raw_data/N_06_37_2/N_06_37_2_FDSW210065741-1r_HVKLHDSXY_L2_{Pair}.fq.gz
+#      Lane_2: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_1/raw_data/N_06_37_2/N_06_37_2_FDSW210065741-1r_HVYL2DSXY_L4_{Pair}.fq.gz
+  N_10_669:
+    N_10_669_FDSW210065829:
+      Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_1/raw_data/N_10_669/N_10_669_FDSW210065829-1r_HVYYVDSXY_L3_{Pair}.fq.gz
+      Lane_2: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_1/raw_data/N_10_669/N_10_669_FDSW210065829-1r_HVYYVDSXY_L4_{Pair}.fq.gz
+#  N_14j:
+#    N_14j_FDSW210065713:
+#      Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_1/raw_data/N_14j/N_14j_FDSW210065713-1r_HVYL2DSXY_L2_{Pair}.fq.gz
+#  N_17B:
+#    N_17B_FDSW210065878:
+#      Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_1/raw_data/N_17B/N_17B_FDSW210065878-1r_HVYWCDSXY_L2_{Pair}.fq.gz
+#  N_20_918:
+#    N_20_918_FDSW210065835:
+#      Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_1/raw_data/N_20_918/N_20_918_FDSW210065835-1r_HVYYVDSXY_L3_{Pair}.fq.gz
+#      Lane_2: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_1/raw_data/N_20_918/N_20_918_FDSW210065835-1r_HVYYVDSXY_L4_{Pair}.fq.gz
+#      Lane_3: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_1/raw_data/N_20_918/N_20_918_FDSW210065835-1r_HWGYTDSXY_L2_{Pair}.fq.gz
+#  N_20_919:
+#    N_20_919_FDSW210065833:
+#      Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_1/raw_data/N_20_919/N_20_919_FDSW210065833-1r_HVYYVDSXY_L3_{Pair}.fq.gz
+#      Lane_2: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_1/raw_data/N_20_919/N_20_919_FDSW210065833-1r_HVYYVDSXY_L4_{Pair}.fq.gz
+#  N_20C:
+#    N_20C_FSFP210065751:
+#      Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_1/raw_data/N_20C/N_20C_FSFP210065751-1r_HVTWGDSXY_L2_{Pair}.fq.gz
+#      Lane_2: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_1/raw_data/N_20C/N_20C_FSFP210065751-1r_HW3JJDSXY_L1_{Pair}.fq.gz
+#  N_21:
+#    N_21_FDSW210065822:
+#      Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_1/raw_data/N_21/N_21_FDSW210065822-1r_HVYYVDSXY_L3_{Pair}.fq.gz
+#      Lane_2: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_1/raw_data/N_21/N_21_FDSW210065822-1r_HVYYVDSXY_L4_{Pair}.fq.gz
+#  N_22_copy:
+#    N_22_copy_FDSW210065693:
+#      Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_1/raw_data/N_22_copy/N_22_copy_FDSW210065693-1r_HVYL2DSXY_L1_{Pair}.fq.gz
+#  N_23B:
+#    N_23B_FDSW210065753:
+#      Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_1/raw_data/N_23B/N_23B_FDSW210065753-1r_HVYL2DSXY_L4_{Pair}.fq.gz
+  N_25_15_06:
+    N_25_15_06_FDSW210065719:
+      Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_1/raw_data/N_25_15_06/N_25_15_06_FDSW210065719-1r_HVYL2DSXY_L3_{Pair}.fq.gz
+#  N_2hmr:
+#    N_2hmr_FDSW210065883:
+#      Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_1/raw_data/N_2hmr/N_2hmr_FDSW210065883-1r_HVKLHDSXY_L2_{Pair}.fq.gz
+#      Lane_2: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_1/raw_data/N_2hmr/N_2hmr_FDSW210065883-1r_HVYWCDSXY_L2_{Pair}.fq.gz
+  N_3:
+    N_3_FDSW210065812:
+      Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_1/raw_data/N_3/N_3_FDSW210065812-1r_HVYYVDSXY_L3_{Pair}.fq.gz
+      Lane_2: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_1/raw_data/N_3/N_3_FDSW210065812-1r_HVYYVDSXY_L4_{Pair}.fq.gz
+#  N_37C:
+#    N_37C_FDSW210065762:
+#      Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_1/raw_data/N_37C/N_37C_FDSW210065762-1r_HVYYVDSXY_L1_{Pair}.fq.gz
+#      Lane_2: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_1/raw_data/N_37C/N_37C_FDSW210065762-1r_HVYYVDSXY_L2_{Pair}.fq.gz
+#      Lane_3: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_1/raw_data/N_37C/N_37C_FDSW210065762-1r_HWGYTDSXY_L2_{Pair}.fq.gz
+  N_38_copy:
+    N_38_copy_FDSW210065826:
+      Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_1/raw_data/N_38_copy/N_38_copy_FDSW210065826-1r_HVYYVDSXY_L3_{Pair}.fq.gz
+      Lane_2: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_1/raw_data/N_38_copy/N_38_copy_FDSW210065826-1r_HVYYVDSXY_L4_{Pair}.fq.gz
+  N_39:
+    N_39_FDSW210065685:
+      Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_1/raw_data/N_39/N_39_FDSW210065685-1r_HVYL2DSXY_L1_{Pair}.fq.gz
+#  N_395:
+#    N_395_FDSW210065841:
+#      Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_1/raw_data/N_395/N_395_FDSW210065841-1r_HVYYVDSXY_L3_{Pair}.fq.gz
+#      Lane_2: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_1/raw_data/N_395/N_395_FDSW210065841-1r_HVYYVDSXY_L4_{Pair}.fq.gz
+  N_40_924:
+    N_40_924_FDSW210065860:
+      Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_1/raw_data/N_40_924/N_40_924_FDSW210065860-1r_HVYWCDSXY_L3_{Pair}.fq.gz
+#  N_44:
+#    N_44_FDSW210065707:
+#      Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_1/raw_data/N_44/N_44_FDSW210065707-1r_HVYL2DSXY_L2_{Pair}.fq.gz
+  N_49_RC:
+    N_49_RC_FDSW210065739:
+      Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_1/raw_data/N_49_RC/N_49_RC_FDSW210065739-1r_HVYL2DSXY_L4_{Pair}.fq.gz
+  N_688:
+    N_688_FDSW210065809:
+      Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_1/raw_data/N_688/N_688_FDSW210065809-1r_HVYYVDSXY_L3_{Pair}.fq.gz
+      Lane_2: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_1/raw_data/N_688/N_688_FDSW210065809-1r_HVYYVDSXY_L4_{Pair}.fq.gz
+      Lane_3: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_1/raw_data/N_688/N_688_FDSW210065809-1r_HWGYTDSXY_L2_{Pair}.fq.gz
+#  N_923:
+#    N_923_FDSW210065828:
+#      Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_1/raw_data/N_923/N_923_FDSW210065828-1r_HVYYVDSXY_L3_{Pair}.fq.gz
+#      Lane_2: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_1/raw_data/N_923/N_923_FDSW210065828-1r_HVYYVDSXY_L4_{Pair}.fq.gz
+  N_943:
+    N_943_FDSW210065857:
+      Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_1/raw_data/N_943/N_943_FDSW210065857-1r_HW25MDSXY_L2_{Pair}.fq.gz
+#  N_Gt_25:
+#    N_Gt_25_FDSW210065893:
+#      Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_1/raw_data/N_Gt_25/N_Gt_25_FDSW210065893-1r_HW25MDSXY_L2_{Pair}.fq.gz
+#  N_tk_1:
+#    N_tk_1_FDSW210065890:
+#      Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_1/raw_data/N_tk_1/N_tk_1_FDSW210065890-1r_HW25MDSXY_L2_{Pair}.fq.gz
+#      Lane_2: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_1/raw_data/N_tk_1/N_tk_1_FDSW210065890-1r_HWGYTDSXY_L1_{Pair}.fq.gz
+#  N_tk7:
+#    N_tk7_FDSW210065891:
+#      Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_1/raw_data/N_tk7/N_tk7_FDSW210065891-1r_HW25MDSXY_L2_{Pair}.fq.gz
+  N_06_21:
+    N_06_21_FDSW210065730:
+      Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_2/raw_data/N_06_21/N_06_21_FDSW210065730-1r_HVYL2DSXY_L3_{Pair}.fq.gz
+      Lane_2: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_2/raw_data/N_06_21/N_06_21_FDSW210065730-1r_HWGYTDSXY_L2_{Pair}.fq.gz
+#  N_09_RC:
+#    N_09_RC_FDSW210065734:
+#      Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_2/raw_data/N_09_RC/N_09_RC_FDSW210065734-1r_HVYL2DSXY_L3_{Pair}.fq.gz
+#      Lane_2: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_2/raw_data/N_09_RC/N_09_RC_FDSW210065734-1r_HWGYTDSXY_L2_{Pair}.fq.gz
+  N_1:
+    N_1_FDSW210065810:
+      Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_2/raw_data/N_1/N_1_FDSW210065810-1r_HVYYVDSXY_L3_{Pair}.fq.gz
+      Lane_2: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_2/raw_data/N_1/N_1_FDSW210065810-1r_HVYYVDSXY_L4_{Pair}.fq.gz
+      Lane_3: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_2/raw_data/N_1/N_1_FDSW210065810-1r_HWGYTDSXY_L2_{Pair}.fq.gz
+  N_11B:
+    N_11B_FDSW210065749:
+      Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_2/raw_data/N_11B/N_11B_FDSW210065749-1r_HVYL2DSXY_L4_{Pair}.fq.gz
+#  N_20:
+#    N_20_FDSW210065692:
+#      Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_2/raw_data/N_20/N_20_FDSW210065692-1r_HVYL2DSXY_L1_{Pair}.fq.gz
+  N_20_926:
+    N_20_926_FDSW210065838:
+      Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_2/raw_data/N_20_926/N_20_926_FDSW210065838-1r_HVYYVDSXY_L3_{Pair}.fq.gz
+      Lane_2: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_2/raw_data/N_20_926/N_20_926_FDSW210065838-1r_HVYYVDSXY_L4_{Pair}.fq.gz
