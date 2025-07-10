@@ -11,7 +11,7 @@ statistics from MultipleQC;
 
 exteremely high heterozygosity;
 
-relateness between pairwise samples: King calculated from global 2D-sfs;
+relateness between pairwise samples: King calculated from global 2D-sfs.
 
 ### 03_Sites_filtering
 A pipeline designed to avoid biases from low-quality mapping, based on
