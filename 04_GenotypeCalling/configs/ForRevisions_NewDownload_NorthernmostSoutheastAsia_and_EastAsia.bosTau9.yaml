@@ -1,0 +1,10 @@
+ingroup: bos
+results_subdir: AsianBos_SouthIndia
+ref:
+  name: bosTau9
+  fa: /home/wlk579/1.0JavaBanteng_project/3.sites_filtering/bosTau9.fasta
+  fai: /home/wlk579/1.0JavaBanteng_project/3.sites_filtering/bosTau9.fasta.fai
+sites: /home/wlk579/2.0Indonesia_Bos_project/Indonesia_Bos_project/Good_sites_Bostau9/autosome_rep_het_dep_map.bed
+tsv: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/EmuZebu_SouthernIndian/GT_calling/tsvs/AsianBos.NewSouthIndia.bosTau9.tsv
+populations: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/EmuZebu_SouthernIndian/GT_calling/tsvs/AsianBos.NewSouthIndia.bosTau9.tsv
+tmp_dir: /home/wlk579/Server_bos/scratch/tmp/SouthIndia
