@@ -88,8 +88,7 @@ Options:
     Depths: no
     # Generate summary table for each target (yes / no)
     Summary: no
-
-
+    
 Genomes:
   Banteng:
     Path: /home/wlk579/Server_bos/data/reference/banteng_denovo/Banteng_PlusMt.draft.fasta
@@ -100,10 +99,174 @@ NOVOGENE:  ## Illumina adapter
        --adapter1: AGGCCAAGCGGTCTTAGGAAGACAA
        --adapter2: AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
 
-       
-  N_31B:
-    N_31B_FDSW210065864:
-      Lane_1: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_2/raw_data/N_31B/N_31B_FDSW210065864-1r_HVYWCDSXY_L4_{Pair}.fq.gz
-      Lane_2: /home/wlk579/2.0Indonesia_Bos_project/Revision_NC/BantengRefMap/fastq/X204SC20093336-Z01-F002_2/raw_data/N_31B/N_31B_FDSW210065864-1r_HWGYTDSXY_L3_{Pair}.fq.gz
+#### reference for Loter, BaliBali+BaliAustralia+Banteng
+  N_2hmr:
+    N_2hmr_FDSW210065883:
+      Lane_1: /home/wlk579/Server_bos/people/wlk579/Banteng_project/0.data_bams_BantengRef/all_other_map/fastq/N_2hmr_FDSW210065883-1r_HVKLHDSXY_L2_{Pair}.fq.gz
+      Lane_2: /home/wlk579/Server_bos/people/wlk579/Banteng_project/0.data_bams_BantengRef/all_other_map/fastq/N_2hmr_FDSW210065883-1r_HVYWCDSXY_L2_{Pair}.fq.gz
+  N_5hmr_1:
+    N_5hmr_1_FDSW210065886:
+      Lane_1: /home/wlk579/Server_bos/people/wlk579/Banteng_project/0.data_bams_BantengRef/all_other_map/fastq/N_5hmr_1_FDSW210065886-1r_HVYWCDSXY_L2_{Pair}.fq.gz
+  N_6hmr:
+    N_6hmr_FDSW210065879:
+      Lane_1: /home/wlk579/Server_bos/people/wlk579/Banteng_project/0.data_bams_BantengRef/all_other_map/fastq/N_6hmr_FDSW210065879-1r_HVYWCDSXY_L2_{Pair}.fq.gz
+  N_6t_11:
+    N_6t_11_FDSW210065894:
+      Lane_1: /home/wlk579/Server_bos/people/wlk579/Banteng_project/0.data_bams_BantengRef/all_other_map/fastq/N_6t_11_FDSW210065894-1r_HVYWCDSXY_L2_{Pair}.fq.gz
+  N_Gt_25:
+    N_Gt_25_FDSW210065893:
+      Lane_1: /home/wlk579/Server_bos/people/wlk579/Banteng_project/0.data_bams_BantengRef/all_other_map/fastq/N_Gt_25_FDSW210065893-1r_HW25MDSXY_L2_{Pair}.fq.gz
+  N_gt6:
+    N_gt6_FDSW210065896:
+      Lane_1: /home/wlk579/Server_bos/data/Balis_Banteng/N_gt6_FDSW210065896-1r_HWKKTDSXY_L2_{Pair}.fq.gz
+      Lane_2: /home/wlk579/Server_bos/data/Balis_Banteng/N_gt6_FDSW210065896-1a_HWJL7DSXY_L3_{Pair}.fq.gz
+      Lane_3: /home/wlk579/Server_bos/data/Balis_Banteng/N_gt6_FDSW210065896-1r_HVTWGDSXY_L3_{Pair}.fq.gz
+  N_gt15:
+    N_gt15_FDSW210065882:
+      Lane_1: /home/wlk579/Server_bos/people/wlk579/Banteng_project/0.data_bams_BantengRef/all_other_map/fastq/N_gt15_FDSW210065882-1r_HWGM3DSXY_L1_{Pair}.fq.gz
+      Lane_2: /home/wlk579/Server_bos/people/wlk579/Banteng_project/0.data_bams_BantengRef/all_other_map/fastq/N_gt15_FDSW210065882-1r_HWGVNDSXY_L2_{Pair}.fq.gz
+  N_gt16:
+    N_gt16_FDSW210065884:
+      Lane_1: /home/wlk579/Server_bos/people/wlk579/Banteng_project/0.data_bams_BantengRef/all_other_map/fastq/N_gt16_FDSW210065884-1r_HWGWJDSXY_L1_{Pair}.fq.gz
+  N_gt8:
+    N_gt8_FDSW210065881:
+      Lane_1: /home/wlk579/Server_bos/people/wlk579/Banteng_project/0.data_bams_BantengRef/all_other_map/fastq/N_gt8_FDSW210065881-1r_HW25MDSXY_L2_{Pair}.fq.gz
+  N_kb_3:
+    N_kb_3_FDSW210065889:
+      Lane_1: /home/wlk579/Server_bos/people/wlk579/Banteng_project/0.data_bams_BantengRef/all_other_map/fastq/N_kb_3_FDSW210065889-1r_HW25MDSXY_L2_{Pair}.fq.gz
+      Lane_2: /home/wlk579/Server_bos/people/wlk579/Banteng_project/0.data_bams_BantengRef/all_other_map/fastq/N_kb_3_FDSW210065889-1r_HWGYTDSXY_L3_{Pair}.fq.gz
+  N_mk01:
+    N_mk01_FDSW210065897:
+      Lane_1: /home/wlk579/Server_bos/people/wlk579/Banteng_project/0.data_bams_BantengRef/all_other_map/fastq/N_mk01_FDSW210065897-1r_HW25MDSXY_L2_{Pair}.fq.gz
+  N_mk1:
+    N_mk1_FDSW210065895:
+      Lane_1: /home/wlk579/Server_bos/people/wlk579/Banteng_project/0.data_bams_BantengRef/all_other_map/fastq/N_mk1_FDSW210065895-1r_HW25MDSXY_L2_{Pair}.fq.gz
+  N_tk_1:
+    N_tk_1_FDSW210065890:
+      Lane_1: /home/wlk579/Server_bos/people/wlk579/Banteng_project/0.data_bams_BantengRef/all_other_map/fastq/N_tk_1_FDSW210065890-1r_HW25MDSXY_L2_{Pair}.fq.gz
+      Lane_2: /home/wlk579/Server_bos/people/wlk579/Banteng_project/0.data_bams_BantengRef/all_other_map/fastq/N_tk_1_FDSW210065890-1r_HWGYTDSXY_L1_{Pair}.fq.gz
+  N_tk5:
+    N_tk5_FDSW210065880:
+      Lane_1: /home/wlk579/Server_bos/people/wlk579/Banteng_project/0.data_bams_BantengRef/all_other_map/fastq/N_tk5_FDSW210065880-1r_HW25MDSXY_L2_{Pair}.fq.gz
+  N_tk7:
+    N_tk7_FDSW210065891:
+      Lane_1: /home/wlk579/Server_bos/people/wlk579/Banteng_project/0.data_bams_BantengRef/all_other_map/fastq/N_tk7_FDSW210065891-1r_HW25MDSXY_L2_{Pair}.fq.gz
+  N_wn_2:
+    N_wn_2_FDSW210065887:
+      Lane_1: /home/wlk579/Server_bos/people/wlk579/Banteng_project/0.data_bams_BantengRef/all_other_map/fastq/N_wn_2_FDSW210065887-1r_HW25MDSXY_L2_{Pair}.fq.gz
+  N_wn_4:
+    N_wn_4_FDSW210065892:
+      Lane_1: /home/wlk579/Server_bos/people/wlk579/Banteng_project/0.data_bams_BantengRef/all_other_map/fastq/N_wn_4_FDSW210065892-1r_HW25MDSXY_L2_{Pair}.fq.gz
+      Lane_2: /home/wlk579/Server_bos/people/wlk579/Banteng_project/0.data_bams_BantengRef/all_other_map/fastq/N_wn_4_FDSW210065892-1r_HWGYTDSXY_L1_{Pair}.fq.gz
+  N_y_13:
+    N_y_13_FDSW210065885:
+      Lane_1: /home/wlk579/Server_bos/people/wlk579/Banteng_project/0.data_bams_BantengRef/all_other_map/fastq/N_y_13_FDSW210065885-1r_HW25MDSXY_L2_{Pair}.fq.gz
+  N_6t_7:
+    N_6t_7_FDSW210065888:
+      Lane_1: /home/wlk579/Server_bos/data/Balis_Banteng/N_6t_7_FDSW210065888-1r_HVYWCDSXY_L2_{Pair}.fq.gz
 
-      
+Illumina:  ## Illumina adapter
+  Options:
+    AdapterRemoval:
+       --adapter1: AGATCGGAAGAGCACACGTCTGAACTCCAGTCA
+       --adapter2: AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
+  a10:
+    a10_FDSW210166086:
+      Lane_1: /home/wlk579/Server_bos/data/Balis_Banteng/a10_FDSW210166086-1r_HYKWTDSXY_L1_{Pair}.fq.gz
+  a45:
+    a45_FDSW210166088:
+      Lane_1: /home/wlk579/Server_bos/data/Balis_Banteng/a45_FDSW210166088-1r_HYKWTDSXY_L1_{Pair}.fq.gz
+  a48:
+    a48_FDSW210166091:
+      Lane_1: /home/wlk579/Server_bos/data/Balis_Banteng/a48_FDSW210166091-1r_H75H5DSX2_L3_{Pair}.fq.gz
+  a5:
+    a5_FDSW210166078:
+      Lane_1: /home/wlk579/Server_bos/data/Balis_Banteng/a5_FDSW210166078-1r_H75H5DSX2_L1_{Pair}.fq.gz
+  a6:
+    a6_FDSW210166079:
+      Lane_1: /home/wlk579/Server_bos/data/Balis_Banteng/a6_FDSW210166079-1r_H75H5DSX2_L1_{Pair}.fq.gz
+  a7:
+    a7_FDSW210166080:
+      Lane_1: /home/wlk579/Server_bos/data/Balis_Banteng/a7_FDSW210166080-1r_H75H5DSX2_L1_{Pair}.fq.gz
+  a1:
+    a1_FDSW210166084:
+      Lane_1: /home/wlk579/Server_bos/data/Balis_Banteng/a1_FDSW210166084-1r_H75H5DSX2_L4_{Pair}.fq.gz
+  a47:
+    a47_FDSW210166090:
+      Lane_1: /home/wlk579/Server_bos/data/Balis_Banteng/a47_FDSW210166090-1r_HYKWTDSXY_L1_{Pair}.fq.gz
+      Lane_2: /home/wlk579/Server_bos/data/Balis_Banteng/a47_FDSW210166090-1r_H75CFDSX2_L2_{Pair}.fq.gz
+  a49:
+    a49_FDSW210166092:
+      Lane_1: /home/wlk579/Server_bos/data/Balis_Banteng/a49_FDSW210166092-1r_H75H5DSX2_L3_{Pair}.fq.gz
+  a50:
+    a50_FDSW210166093:
+      Lane_1: /home/wlk579/Server_bos/data/Balis_Banteng/a50_FDSW210166093-1r_H75H5DSX2_L3_{Pair}.fq.gz
+  a8:
+    a8_FDSW210166081:
+      Lane_1: /home/wlk579/Server_bos/data/Balis_Banteng/a8_FDSW210166081-1r_H73GWDSX2_L2_{Pair}.fq.gz
+      Lane_2: /home/wlk579/Server_bos/data/Balis_Banteng/a8_FDSW210166081-1r_H75H5DSX2_L2_{Pair}.fq.gz
+  a12:
+    a12_FDSW210166087:
+      Lane_1: /home/wlk579/Server_bos/data/Balis_Banteng/a12_FDSW210166087-1r_HYKWTDSXY_L1_{Pair}.fq.gz
+      Lane_2: /home/wlk579/Server_bos/data/Balis_Banteng/a12_FDSW210166087-1r_H75CFDSX2_L2_{Pair}.fq.gz
+  B._javanicus_SD.Zoo_OR206:
+    200710002_run0152_LIB10112_S1_L001:
+      SRR4035280: /home/wlk579/Server_bos/people/wlk579/Banteng_project/0.data_bams_BantengRef/all_other_map/fastq/LIB10112_S1_L001_R{Pair}_001.fastq.gz
+    200710002_run0152_LIB10112_S1_L002:
+      SRR4035281: /home/wlk579/Server_bos/people/wlk579/Banteng_project/0.data_bams_BantengRef/all_other_map/fastq/LIB10112_S1_L002_R{Pair}_001.fastq.gz
+    200710002_run0152_LIB10112_S1_L003:
+      SRR4035282: /home/wlk579/Server_bos/people/wlk579/Banteng_project/0.data_bams_BantengRef/all_other_map/fastq/LIB10112_S1_L003_R{Pair}_001.fastq.gz
+    200710002_run0152_LIB10112_S1_L004:
+      SRR4035283: /home/wlk579/Server_bos/people/wlk579/Banteng_project/0.data_bams_BantengRef/all_other_map/fastq/LIB10112_S1_L004_R{Pair}_001.fastq.gz
+  B._javanicus_W.Zoo_DB:
+    B._javanicus_W.Zoo_DB:
+      Banteng2_1_1: /home/wlk579/Server_bos/people/wlk579/Banteng_project/data_bams_BantengRef_Origional/all_other_map/fastq/Banteng2_1_1.fastq.gz
+      Banteng2_2_1: /home/wlk579/Server_bos/people/wlk579/Banteng_project/data_bams_BantengRef_Origional/all_other_map/fastq/Banteng2_2_1.fastq.gz
+      Banteng2_3_1: /home/wlk579/Server_bos/people/wlk579/Banteng_project/data_bams_BantengRef_Origional/all_other_map/fastq/Banteng2_3_1.fastq.gz
+      Banteng2_4_1: /home/wlk579/Server_bos/people/wlk579/Banteng_project/data_bams_BantengRef_Origional/all_other_map/fastq/Banteng2_4_1.fastq.gz
+  LIB112407_Banteng_85B_Texas:
+    LIB112407_Banteng_85B_Texas:
+      run035: /home/wlk579/Server_bos/data/Captive_Texas_Banteng/LIB112407_S6_R{Pair}_001.fastq.gz
+  LIB112408_Banteng_82B_Texas:
+    LIB112408_Banteng_82B_Texas:
+      run035: /home/wlk579/Server_bos/data/Captive_Texas_Banteng/LIB112408_S7_R{Pair}_001.fastq.gz
+  LIB112409_Banteng_86B1_Texas:
+    LIB112409_Banteng_86B1_Texas:
+     run035 : /home/wlk579/Server_bos/data/Captive_Texas_Banteng/LIB112409_S8_R{Pair}_001.fastq.gz
+     run036 : /home/wlk579/Server_bos/data/Captive_Texas_Banteng/LIB112409_S5_R{Pair}_001.fastq.gz
+
+#### reference for Loter, Sumba Ongole + south Asian zebu
+  Nelore_BINE1:
+    BINE1:
+      SRR2016756: /home/wlk579/Server_bos/people/wlk579/Banteng_project/0.data_bams_BantengRef/all_other_map/fastq/SRR2016756_{Pair}.fastq.gz
+  Nelore_BINE2:
+    BINE2:
+      SRR2016757: /home/wlk579/Server_bos/people/wlk579/Banteng_project/0.data_bams_BantengRef/all_other_map/fastq/SRR2016757_{Pair}.fastq.gz
+  Bhagnari_23:
+    CL100007003_L01:
+      SRR8156155: /home/wlk579/Server_bos/people/wlk579/Banteng_project/0.data_bams_BantengRef/all_other_map/fastq/SRR8156155_{Pair}.fastq.gz
+  Gir_BIGI3:
+    BIGI3:
+      SRR2016752: /home/wlk579/Server_bos/people/wlk579/Banteng_project/0.data_bams_BantengRef/all_other_map/fastq/SRR2016752_{Pair}.fastq.gz
+  Gir_BIGI4:
+    BIGI4:
+      SRR2016753: /home/wlk579/Server_bos/people/wlk579/Banteng_project/0.data_bams_BantengRef/all_other_map/fastq/SRR2016753_{Pair}.fastq.gz
+  Kangayam_SAMN10131257:
+    Kangayam_SAMN10131257:
+      SRR8053288: /home/wlk579/Server_bos/people/wlk579/Banteng_project/0.data_bams_BantengRef/all_other_map/fastq/SRR8053288_{Pair}.fastq.gz
+  Hariana_Har03:
+    Har03_lib1:
+      SRR6936539: /home/wlk579/Server_bos/people/wlk579/Banteng_project/0.data_bams_BantengRef/all_other_map/fastq/SRR6936539_{Pair}.fastq.gz
+  Lohani_18:
+    CL100026723_L02:
+      SRR8156148: /home/wlk579/Server_bos/people/wlk579/Banteng_project/0.data_bams_BantengRef/all_other_map/fastq/SRR8156148_{Pair}.fastq.gz
+  Red_Sindhi_303:
+    CL100026724_L01:
+      SRR8156150: /home/wlk579/Server_bos/people/wlk579/Banteng_project/0.data_bams_BantengRef/all_other_map/fastq/SRR8156150_{Pair}.fastq.gz
+  Sahiwal_Sha3b:
+    Sha3b_lib1:
+      SRR6936540: /home/wlk579/Server_bos/people/wlk579/Banteng_project/0.data_bams_BantengRef/all_other_map/fastq/SRR6936540_{Pair}.fastq.gz
+  Tharparkar_Thar1:
+    Thar1_lib1:
+      SRR6936538: /home/wlk579/Server_bos/people/wlk579/Banteng_project/0.data_bams_BantengRef/all_other_map/fastq/SRR6936538_{Pair}.fastq.gz
+  
